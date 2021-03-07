@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/iWeb",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
