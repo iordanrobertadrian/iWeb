@@ -33,7 +33,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 10px 0;
     height: 10vh;
     mat-icon {
         color: #ffffff;
@@ -42,17 +41,21 @@
         font-size: 30px;
     }
 }
-::ng-deep .mat-menu-content {
-    background-color: black;
-    position: absolute;
-    width: 100%;
+.mobile-menu {
     height: 90vh;
-}
-::ng-deep .mat-menu-content button {
     background-color: black;
-    color: white;
-    font-family: 'Black Ops One', cursive;
-    text-align: center;
-    height: 16vh;
-    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 2px solid #60DB57;
+    .mobile-button {
+        color: white;
+        font-family: 'Black Ops One', cursive;
+        font-size: 15px;
+        cursor: pointer;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
