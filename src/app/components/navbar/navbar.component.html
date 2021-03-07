@@ -1,4 +1,4 @@
-<div class="navbar-container">
+<div class="navbar-container-desktop">
     <img src="../../../assets/Logo/iWeb-transparent.png" alt="iWeb">
     <div class="menu">
         <div class="button hvr-underline-from-left">Acasa</div>
@@ -7,4 +7,15 @@
         <div class="button hvr-underline-from-left">Despre noi</div>
         <div class="button hvr-underline-from-left">Contact</div>
     </div>
+</div>
+<div class="navbar-container-mobile">
+    <mat-icon aria-hidden="false" aria-label="Example home icon" [matMenuTriggerFor]="menu">menu</mat-icon>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>Acasa</button>
+        <button mat-menu-item>Proiecte</button>
+        <button mat-menu-item>Echipa</button>
+        <button mat-menu-item>Despre noi</button>
+        <button mat-menu-item>Contact</button>
+    </mat-menu>
+    <img src="../../../assets/Logo/iWeb-transparent.png" alt="iWeb">
 </div>
