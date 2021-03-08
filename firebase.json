@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/iWeb",
+    "public": "dist",
     "ignore": [
       "firebase.json",
       "**/.*",
