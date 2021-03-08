@@ -7,6 +7,9 @@
     .carousel {
         display: none;
     }
+    .magazin-online-banner-mobile, .afacerea-ta-banner-mobile {
+      display: block!important;
+    }
   }
 .typewriter {
     display:flex;
@@ -30,7 +33,21 @@
                    animated-text 4s steps(29,end) 1s 1 alternate backwards;
       }
 }
-  
+
+.magazin-online-banner-mobile, .afacerea-ta-banner-mobile {
+  display: none;
+  margin-top: 40px;
+  .title {
+    font-family: 'Black Ops One', cursive;
+    font-size: 13px;
+    text-align: center;
+  }
+  .subtitle {
+    font-family: 'Black Ops One', cursive;
+    text-align: center;
+    font-size: 15px;
+  }
+}
 @keyframes animated-text{
 from{width: 0;}
 to{width: 590px;}
