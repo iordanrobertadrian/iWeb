@@ -7,8 +7,11 @@
     .carousel {
         display: none;
     }
-    .magazin-online-banner-mobile, .afacerea-ta-banner-mobile {
+    .afacerea-ta-banner-mobile {
       display: block!important;
+    }
+    .magazin-online-banner-mobile {
+      display: flex!important;
     }
   }
 .typewriter {
@@ -34,9 +37,13 @@
       }
 }
 
+.magazin-online-banner-mobile {
+  height: 90vh;
+  flex-direction: column;
+  justify-content: center;
+}
 .magazin-online-banner-mobile, .afacerea-ta-banner-mobile {
   display: none;
-  margin-top: 40px;
   .title {
     font-family: 'Black Ops One', cursive;
     font-size: 13px;
