@@ -1,141 +1,144 @@
 @media only screen and (max-width: 650px) {
-    .typewriter {
-        p {
-            font-size: 15px!important;
-        }
-    }
-    .carousel {
-        display: none;
-    }
-    .afacerea-ta-banner-mobile {
-      display: block!important;
-    }
-    .magazin-online-banner-mobile {
-      display: flex!important;
-    }
-    .projects-section {
-      .title {
-        font-size: 25px!important;
-      }
-    }
+  .carousel,
+  .about-us-section,
+  .testimonials-section {
+    display: none !important;
   }
-.typewriter {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px;
-    p {
-        border-right: solid 3px rgba(0,255,0,.75);
-        white-space: nowrap;
-        overflow: hidden;    
-        font-family: 'Source Code Pro', monospace;  
-        font-size: 28px;
-        color: black;
-        font-family: 'Black Ops One', cursive;
-        margin-bottom: 0px;
-      }
-      
-      p {
-        animation: animated-text 4s steps(29,end) 1s 1 normal both,
-                   animated-cursor 600ms steps(29,end) infinite,
-                   animated-text 4s steps(29,end) 1s 1 alternate backwards;
-      }
+  .afacerea-ta-banner-mobile {
+    display: block !important;
+  }
+  .magazin-online-banner-mobile {
+    display: flex !important;
+  }
 }
 
+// Banners section mobile
 .magazin-online-banner-mobile {
   height: 90vh;
   flex-direction: column;
   justify-content: center;
 }
-.magazin-online-banner-mobile, .afacerea-ta-banner-mobile {
+.magazin-online-banner-mobile,
+.afacerea-ta-banner-mobile {
   display: none;
   .title {
-    font-family: 'Black Ops One', cursive;
+    font-family: "Black Ops One", cursive;
     font-size: 13px;
     text-align: center;
   }
   .subtitle {
-    font-family: 'Black Ops One', cursive;
+    font-family: "Black Ops One", cursive;
     text-align: center;
     font-size: 15px;
   }
 }
-@keyframes animated-text{
-from{width: 0;}
-to{width: 590px;}
-}
 
-@keyframes animated-back{
-from{width: 590px;}
-to{width: 0;}
-}
-  
-  /* cursor animations */
-  
-  @keyframes animated-cursor{
-    from{border-right-color: #60DB57}
-    to{border-right-color: transparent;}
+// About us section
+.about-us-section {
+  padding: 0px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  .banner {
+    width: 50%;
+    margin-right: 100px;
   }
-
-  @mixin white-gradient {
-    background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
-  }
-  
-  $animationSpeed: 40s;
-  
-  // Animation
-  @keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-250px * 7))}
-  }
-  
-  .projects-section {
+  .description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     .title {
-      font-family: 'Black Ops One', cursive;
-      text-align: center;
-      font-size: 50px;
-      margin-bottom: 50px;
+      font-family: "Black Ops One", cursive;
+      font-size: 36px;
     }
-    // Styling
-    .slider {
-      background: white;
-      box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-      height: 100px;
-      margin: auto;
-      overflow:hidden;
-      position: relative;
-      width: 100%;
-      
-      &::before,
-      &::after {
-        @include white-gradient;
-        content: "";
-        height: 100px;
-        position: absolute;
-        width: 200px;
-        z-index: 2;
+    .subtitle {
+      margin-top: 20px;
+      font-family: "Black Ops One", cursive;
+      font-size: 22px;
+    }
+  }
+}
+
+//Testimonials section
+.testimonials-section {
+  margin-top: 200px;
+  padding: 0px 350px;
+  .title {
+    font-family: "Black Ops One", cursive;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .client-testimonial-carousel {
+    .carousel-inner {
+      .carousel-item {
+        .carousel-content {
+          min-height: 200px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .testimonial-description {
+            margin-bottom: 25px;
+            font-family: "Contrail One", cursive;
+            font-size: 17px;
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .text {
+            }
+          }
+          .client-container {
+            .client-image {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .image {
+                background-size: cover;
+                background-position: 50% 50%;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+              }
+              .daniel {
+                background-image: url("../../../assets/Clients/daniel.jpg");
+              }
+              .cristina {
+                background-image: url("../../../assets/Clients/cristina.jpg");
+              }
+              .ionita {
+                background-image: url("../../../assets/Clients/ionita.jpg");
+              }
+              .alin {
+                background-image: url("../../../assets/Clients/alin.jpg");
+              }
+              .ionut {
+                background-image: url("../../../assets/Clients/ionut.jpg");
+              }
+              .adriana {
+                background-image: url("../../../assets/Clients/adriana.jpg");
+              }
+            }
+            .testimonial-name {
+              font-weight: bold;
+            }
+            .rate {
+              .yellow {
+                color: #fab23d;
+              }
+            }
+          }
+        }
       }
-      
-      &::after {
-        right: 0;
-        top: 0;
-        transform: rotateZ(180deg);
-      }
-    
-      &::before {
-        left: 0;
-        top: 0;
-      }
-      
-      .slide-track {
-        animation: scroll $animationSpeed linear infinite;
-        display: flex;
-        width: calc(250px * 14);
-      }
-      
-      .slide {
-        height: 100px;
-        width: 250px;
+      .half {
+        background: linear-gradient(to bottom, #e6fcfa 70%, white 30%);
+        min-height: 365px;
       }
     }
   }
+}
