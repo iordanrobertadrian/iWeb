@@ -1,35 +1,64 @@
 @media only screen and (max-width: 650px) {
-  .carousel,
-  .about-us-section,
-  .testimonials-section {
+  .carousel {
     display: none !important;
   }
-  .afacerea-ta-banner-mobile {
+  .afacerea-ta-banner-mobile, .magazin-online-banner-mobile {
     display: block !important;
+    margin-top: 80px;
   }
-  .magazin-online-banner-mobile {
-    display: flex !important;
+  .about-us-section {
+    flex-direction: column-reverse!important;
+    margin-top: 50px;
+    .description {
+      width: 100%!important;
+      .subtitle {
+        font-size: 18px!important;
+      }
+    }
+    .banner {
+      width: 100%!important;
+      margin-right: unset!important;
+    }
+  }
+  .testimonials-section {
+    padding: 0!important;
+    margin-top: 80px!important;
+    .title {
+      font-size: 28px!important;
+      padding: 0 50px!important;
+    }
+    .testimonials-carousel {
+      display: block!important;
+      .carousel-inner {
+        .carousel-item {
+          .carousel-content {
+            .testimonial-description {
+              min-height: 362px!important;
+            }
+          }
+        }
+        .half {
+          background: linear-gradient(to bottom, #e6fcfa 80%, white 20%)!important;
+        }
+      }
+    }
   }
 }
 
 // Banners section mobile
-.magazin-online-banner-mobile {
-  height: 90vh;
-  flex-direction: column;
-  justify-content: center;
-}
 .magazin-online-banner-mobile,
 .afacerea-ta-banner-mobile {
   display: none;
   .title {
     font-family: "Black Ops One", cursive;
-    font-size: 13px;
+    font-size: 28px;
     text-align: center;
+    padding: 0 50px;
   }
   .subtitle {
     font-family: "Black Ops One", cursive;
     text-align: center;
-    font-size: 15px;
+    font-size: 19px;
   }
 }
 
@@ -53,12 +82,13 @@
     align-items: center;
     .title {
       font-family: "Black Ops One", cursive;
-      font-size: 36px;
+      font-size: 28px;
     }
     .subtitle {
       margin-top: 20px;
+      margin-bottom: 50px;
       font-family: "Black Ops One", cursive;
-      font-size: 22px;
+      font-size: 19px;
     }
   }
 }
@@ -70,8 +100,8 @@
   .title {
     font-family: "Black Ops One", cursive;
     text-align: center;
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 34px;
+    margin-bottom: 50px;
   }
   .client-testimonial-carousel {
     .carousel-inner {
