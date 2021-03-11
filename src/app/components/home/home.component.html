@@ -105,3 +105,21 @@
         </div>
       </div>
     </div>
+
+  <!-- online-shop-offer section -->
+  <div class="online-shop-offer-section">
+    <div class="section-title">
+      Ce oferim pentru un magazin online?
+    </div>
+    <div class="offer-cards">
+      <div class="offer-card" *ngFor="let onlineShopOffer of onlineShopOffers">
+        <div class="title">
+          {{ onlineShopOffer.title }}
+        </div>
+        <img [src]="onlineShopOffer.imagePath" width="100px">
+        <div class="description">
+          {{ onlineShopOffer.description }}
+        </div>
+      </div>
+    </div>
+  </div>
