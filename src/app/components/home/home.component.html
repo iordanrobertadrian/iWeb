@@ -62,47 +62,7 @@
     </div>
       <div id="client-testimonial-carousel" class="carousel testimonials-carousel slide client-testimonial-carousel" data-ride="carousel" style="min-height: 200px;" data-pause="true">
         <div class="carousel-inner" role="listbox">
-          <div class="carousel-item text-center p-4 half active">
-            <div class="carousel-content">
-              <div class="testimonial-description">
-                <div class="text">
-                  <span class="material-icons">
-                    format_quote
-                    </span>
-                    Deliver features on time, good understanding of requirements, good communication skills.
-                    <span class="material-icons">
-                      format_quote
-                      </span>
-                </div>
-              </div>
-              <div class="client-container">
-                <div class="client-image">
-                  <div class="image daniel"></div>
-                </div>
-                <div class="testimonial-name">
-                  Daniel Gheorghe
-                </div>
-                <div class="rate">
-                  <span class="material-icons yellow">
-                    star_rate
-                    </span>
-                    <span class="material-icons yellow">
-                      star_rate
-                      </span>
-                      <span class="material-icons yellow">
-                        star_rate
-                        </span>
-                        <span class="material-icons yellow">
-                          star_rate
-                          </span>
-                          <span class="material-icons yellow">
-                            star_rate
-                            </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item text-center p-4 half" *ngFor="let review of reviews | async">
+          <div class="carousel-item text-center p-4 half" *ngFor="let review of reviews | async, let isFirst = first" [class.active]="isFirst">
             <div class="carousel-content">
               <div class="testimonial-description">
                 <div class="text">
