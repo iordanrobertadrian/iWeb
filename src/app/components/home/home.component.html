@@ -159,3 +159,23 @@
     </div>
   </div>
   </div>
+
+  <!-- project steps -->
+  <div class="project-steps-section">
+    <div class="title">
+      Etapele unui proiect
+    </div>
+    <div class="project-step-card" *ngFor="let projectStep of projectSteps">
+      <div class="index-title">
+        <div class="index">
+          {{ projectStep.index }}
+        </div>
+        <div class="title">
+          {{ projectStep.title }}
+        </div>
+      </div>
+      <div class="description">
+        {{ projectStep.description }}
+      </div>
+    </div>
+  </div>

@@ -11,6 +11,11 @@ interface OfferCard {
   description: string;
   imagePath: string;
 }
+interface ProjectSteps {
+  index: string;
+  title: string;
+  description: string;
+}
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -202,6 +207,28 @@ export class HomeComponent implements OnInit {
       description: 'Fie ca este vorba de "link building" personalizat sau campanii de publicitate prin Google Adwords sau Facebook Ads, Dream Webdesign se poate ocupa de configurarile necesare ca rezultatele obtinute în urma promovarii să aiba un impact maxim',
       title: 'CAMPANII DE PROMOVARE ONLINE',
       imagePath: '../../../assets/flat-icons/online-promotion.svg'
+    }
+  ]
+  projectSteps: ProjectSteps[] = [
+    {
+      index: '1',
+      description: 'Primul pas în realizarea unui site web il reprezintă colectarea datelor și informasiilor necesare, evaluarea volumului de muncă pe care il implica, precum si a costurilor ce rezulta din acesta. Acum este creionata structura viitorului site si sunt transmise (de beneficiar catre iWeb) toate materialele necesare, de la texte si imagini la videoclipuri sau alte materiale ce se doresc a fi integrate în viitorul site web.',
+      title: 'Colectarea informatiilor despre viitorul site web:'
+    },
+    {
+      index: '2',
+      description: 'Pe baza informatiilor furnizate, designerii nostri se vor ocupa de realizarea unei prime variante a site-ului web. Aceasta va reflecta propria viziune, și reprezinta un model pentru beneficiar. Acolo unde lipsesc informatii, vor fi folosite unele implicite, iar în cazul imaginilor vom folosi unele potrivite, licentiate pentru uzul comun, pe care le achizitionam online.Primul pas în realizarea unui site web il reprezinta colectarea datelor si informasiilor necesare, evaluarea volumului de muncă pe care il implica, precum si a costurilor ce rezulta din acesta. Acum este creionata structura viitorului site si sunt transmise (de beneficiar catre iWeb) toate materialele necesare, de la texte si imagini la videoclipuri sau alte materiale ce se doresc a fi integrate în viitorul site web.',
+      title: 'Realizarea primei variante a site-ului web:'
+    },
+    {
+      index: '3',
+      description: 'Puteti veni cu oricate revizuiri doriti asupra site-ului, asa încat la final acesta sa arate exact cum ati dorit. Aceste revizuiri nu presupun schimbarea termenilor contractuali, adaugarea de noi functii sau capabilitati site-ului, ci se refera strict la modificările de grafica, structura si continut.',
+      title: 'Revizuirea site-ului web:'
+    },
+    {
+      index: '4',
+      description: 'Site-ul web realizat este testat, sunt remediate erorile descoperite si sunt implementate ultimele retușuri solicitate de catre beneficiar. De asemenea, site-ul web este transferat pe domeniul principal, dacă acesta a fost dezvoltat pe un subdomeniu sau pe un alt server si este lansat publicului.',
+      title: 'Finalizarea si lansarea site-ului web:'
     }
   ]
   constructor(private afs: AngularFirestore) { }
