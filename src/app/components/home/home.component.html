@@ -106,6 +106,24 @@
       </div>
     </div>
 
+     <!-- presentation-website-offer section -->
+  <div class="presentation-website-offer-section">
+    <div class="section-title">
+      Ce oferim pentru un site web de prezentare?
+    </div>
+    <div class="offer-cards">
+      <div class="offer-card" *ngFor="let presentationWebsiteOffer of presentationWebsiteOffers">
+        <div class="title">
+          {{ presentationWebsiteOffer.title }}
+        </div>
+        <img [src]="presentationWebsiteOffer.imagePath" width="100px">
+        <div class="description">
+          {{ presentationWebsiteOffer.description }}
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- online-shop-offer section -->
   <div class="online-shop-offer-section">
     <div class="section-title">
@@ -122,4 +140,22 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- extra services -->
+  <div class="extra-services-offer-section">
+    <div class="section-title">
+    Servicii extra
+  </div>
+  <div class="offer-cards">
+    <div class="offer-card" *ngFor="let extraServicesOffer of extraServicesOffers">
+      <div class="title">
+        {{ extraServicesOffer.title }}
+      </div>
+      <img [src]="extraServicesOffer.imagePath" width="100px">
+      <div class="description">
+        {{ extraServicesOffer.description }}
+      </div>
+    </div>
+  </div>
   </div>

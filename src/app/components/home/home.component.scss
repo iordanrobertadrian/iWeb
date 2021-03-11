@@ -43,7 +43,7 @@
       }
     }
   }
-  .online-shop-offer-section {
+  .online-shop-offer-section, .presentation-website-offer-section, .extra-services-offer-section {
     margin-top: 100px!important;
     .section-title {
       margin-bottom: 50px!important;
@@ -167,8 +167,8 @@
   }
 }
 
-//online-shop-offer-section
-.online-shop-offer-section {
+//online-shop-offer-section && presentation-website-offer-section && extra-services-offer-section
+.online-shop-offer-section, .presentation-website-offer-section, .extra-services-offer-section {
   margin-top: 200px;
   padding: 0 50px;
   .section-title {
