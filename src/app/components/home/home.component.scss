@@ -65,7 +65,7 @@
         .half {
           background: linear-gradient(
             to bottom,
-            #e6fcfa 80%,
+            #afedab 80%,
             white 20%
           ) !important;
         }
@@ -207,6 +207,7 @@
   }
   .client-testimonial-carousel {
     .carousel-inner {
+      box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
       .carousel-item {
         .carousel-content {
           min-height: 200px;
