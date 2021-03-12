@@ -6,6 +6,9 @@
         display: flex!important;
     }
   }
+  *:focus {
+    outline: none;
+  }
 .navbar-container-desktop {
     padding: 10px 50px;
     background-color: black;

@@ -1,0 +1,147 @@
+@media only screen and (max-width: 650px) {
+    .contact-us-form {
+        padding: 50px 25px!important;
+    }
+}
+*:focus {
+  outline: none;
+}
+.contact-us-form {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.input-group {
+  display: block;
+  width: 441px;
+  max-width: 100%;
+  height: 82px;
+  border: 0;
+  background-color: black;
+  border-radius: 41px;
+  box-shadow: 0 17px 40px 0 rgba(75, 128, 182, 0.07);
+  margin-bottom: 22px;
+  position: relative;
+  font-size: 17px;
+  color: white;
+  transition: opacity 0.2s ease-in-out, filter 0.2s ease-in-out,
+    box-shadow 0.1s ease-in-out;
+}
+.textarea {
+  height: 194px;
+}
+
+.input-group:hover {
+  box-shadow: 0 14px 44px 0 rgba(0, 0, 0, 0.077);
+}
+
+.input-group input {
+  position: absolute;
+  border: 0;
+  box-shadow: none;
+  background-color: rgba(255, 255, 255, 0);
+  top: 0;
+  height: 65px;
+  width: 100%;
+  padding: 0 53px;
+  box-sizing: border-box;
+  z-index: 3;
+  display: block;
+  color: #60db57;
+  font-size: 17px;
+  font-family: "Black Ops One", cursive;
+  transition: top 0.1s ease-in-out;
+}
+.input-group textarea {
+  position: absolute;
+  border: 0;
+  box-shadow: none;
+  background-color: rgba(255, 255, 255, 0);
+  top: 0;
+  height: 125px;
+  width: 100%;
+  padding: 0 53px;
+  box-sizing: border-box;
+  z-index: 3;
+  display: block;
+  color: #60db57;
+  font-size: 17px;
+  font-family: "Black Ops One", cursive;
+  transition: top 0.1s ease-in-out;
+  resize: none;
+}
+
+.input-group input::placeholder {
+  color: rgba(0, 0, 0, 0);
+}
+.input-group textarea::placeholder {
+  color: rgba(0, 0, 0, 0);
+}
+
+.input-group input:focus,
+.input-group input:not(:placeholder-shown) {
+  top: 17px;
+}
+
+.input-group textarea:focus,
+.input-group textarea:not(:placeholder-shown) {
+  top: 45px;
+}
+
+.input-label {
+  position: absolute;
+  border: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  padding: 0 53px;
+  box-sizing: border-box;
+  font-family: "Black Ops One", cursive;
+  transition: all 0.1s ease-in-out;
+  cursor: text;
+}
+.textarea-label {
+  position: absolute;
+  border: 0;
+  top: 25px;
+  z-index: 2;
+  display: flex;
+  align-items: flex-start;
+  padding: 0 53px;
+  box-sizing: border-box;
+  transition: all 0.1s ease-in-out;
+  font-family: "Black Ops One", cursive;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+  bottom: 20px;
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.input-group textarea:focus + label,
+.input-group textarea:not(:placeholder-shown) + label {
+  bottom: 20px;
+  font-size: 13px;
+  opacity: 0.7;
+}
+.submit-button {
+  width: 220px;
+  max-width: 100%;
+  height: 62px;
+  background-color: black;
+  color: #60db57;
+  border-radius: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Black Ops One", cursive;
+  font-size: 20px;
+}

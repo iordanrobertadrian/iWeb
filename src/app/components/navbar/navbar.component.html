@@ -1,10 +1,10 @@
 <div class="navbar-container-desktop">
     <img src="../../../assets/logo/iWeb-transparent.png" alt="iWeb">
     <div class="menu">
-        <div class="button hvr-underline-from-left">Acasa</div>
+        <div class="button hvr-underline-from-left" routerLink="/acasa">Acasa</div>
         <div class="button hvr-underline-from-left">Proiecte</div>
         <div class="button hvr-underline-from-left">Despre noi</div>
-        <div class="button hvr-underline-from-left">Contact</div>
+        <div class="button hvr-underline-from-left" routerLink="/contact">Contact</div>
     </div>
 </div>
 <div class="navbar-container-mobile">
@@ -12,8 +12,8 @@
     <img src="../../../assets/logo/iWeb-transparent.png" alt="iWeb">
 </div>
 <div class="mobile-menu" *ngIf="showMobileMenu">
-    <div class="mobile-button">Acasa</div>
+    <div class="mobile-button" routerLink="/acasa">Acasa</div>
     <div class="mobile-button">Proiecte</div>
     <div class="mobile-button">Despre noi</div>
-    <div class="mobile-button">Contact</div>
+    <div class="mobile-button" routerLink="/contact">Contact</div>
 </div>
