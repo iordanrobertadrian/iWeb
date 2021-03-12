@@ -7,6 +7,20 @@
     display: block !important;
     margin-top: 80px;
   }
+  .what-we-offer-section {
+    margin-top: 100px;
+    margin-bottom: 100px!important;
+    .online-shop-section, .presentation-website-section, .logo-section, .ux-ui-section, .unique-section {
+      flex-direction: column-reverse!important;
+      margin-top: 100px!important;
+      img, .description {
+        width: 100%!important;
+      }
+      .description {
+        font-size: 28px!important;
+      }
+    }
+  }
   .about-us-section {
     flex-direction: column-reverse !important;
     margin-top: 50px;
@@ -112,7 +126,41 @@
     font-size: 19px;
   }
 }
-
+// What we offer section
+.what-we-offer-section {
+  margin-bottom: 200px;
+  padding: 0px 50px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .title {
+    font-family: "Black Ops One", cursive;
+    text-align: center;
+    font-size: 36px;
+  }
+  .online-shop-section, .presentation-website-section, .logo-section, .ux-ui-section, .unique-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 200px;
+    img {
+      width: 50%;
+    }
+    .description {
+      width: 50%;
+      font-family: "Black Ops One", cursive;
+      font-size: 34px;
+      text-align: center;
+    }
+  }
+  .presentation-website-section {
+    flex-direction: row-reverse;
+  }
+  .ux-ui-section {
+    flex-direction: row-reverse;
+  }
+}
 // About us section
 .about-us-section {
   padding: 0px 50px;
