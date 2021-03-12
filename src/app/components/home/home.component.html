@@ -21,7 +21,7 @@
   <!-- mobile magazin online banner -->
   <div class="magazin-online-banner-mobile">
     <div class="title">
-      Magazinul tau doreste sa intre in mediul online?
+      Magazin online?
     </div>
     <div class="subtitle">
       AICI ESTE SOLUTIA!
@@ -32,7 +32,7 @@
   <!-- afacerea ta banner mobile -->
   <div class="afacerea-ta-banner-mobile">
     <div class="title">
-      Afacerea ta are nevoie de un site de prezentare?
+      Site prezentare?
     </div>
     <div class="subtitle">
       AICI ESTE SOLUTIA!
@@ -60,16 +60,16 @@
     <div class="title">
       Ce parere au clientii nostri despre noi?
     </div>
-      <div id="client-testimonial-carousel" class="carousel slide client-testimonial-carousel" data-ride="carousel" style="min-height: 200px;" data-pause="true">
+      <div id="client-testimonial-carousel" class="carousel testimonials-carousel slide client-testimonial-carousel" data-ride="carousel" style="min-height: 200px;" data-pause="true">
         <div class="carousel-inner" role="listbox">
-          <div class="carousel-item text-center p-4 half">
+          <div class="carousel-item text-center p-4 half" *ngFor="let review of reviews | async, let isFirst = first" [class.active]="isFirst">
             <div class="carousel-content">
               <div class="testimonial-description">
                 <div class="text">
                   <span class="material-icons">
                     format_quote
                     </span>
-                    Deliver features on time, good understanding of requirements, good communication skills.
+                    {{ review.description }}
                     <span class="material-icons">
                       format_quote
                       </span>
@@ -77,210 +77,10 @@
               </div>
               <div class="client-container">
                 <div class="client-image">
-                  <div class="image daniel"></div>
+                  <div class="image daniel" [ngStyle]="{'background-image': 'url('+ review.imageURL+')'}"></div>
                 </div>
                 <div class="testimonial-name">
-                  Daniel Gheorghe
-                </div>
-                <div class="rate">
-                  <span class="material-icons yellow">
-                    star_rate
-                    </span>
-                    <span class="material-icons yellow">
-                      star_rate
-                      </span>
-                      <span class="material-icons yellow">
-                        star_rate
-                        </span>
-                        <span class="material-icons yellow">
-                          star_rate
-                          </span>
-                          <span class="material-icons yellow">
-                            star_rate
-                            </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item active text-center p-4 half">
-            <div class="carousel-content">
-              <div class="testimonial-description">
-                <div class="text">
-                  <span class="material-icons">
-                    format_quote
-                    </span>
-                    Putting together a website is a task, finding the right individual or company is even more complex. I did my search around looking for this particular guy that has the ability to create, design and optimized my web site. Thank God I fount this individual, not only he has great taste in design but he can guide you through the process of creating and beyond.
-                    <span class="material-icons">
-                    format_quote
-                    </span>
-                </div>
-              </div>
-              <div class="client-container">
-                <div class="client-image">
-                  <div class="image ionut"></div>
-                </div>
-                <div class="testimonial-name">
-                  Ionut
-                </div>
-                <div class="rate">
-                  <span class="material-icons yellow">
-                    star_rate
-                    </span>
-                    <span class="material-icons yellow">
-                      star_rate
-                      </span>
-                      <span class="material-icons yellow">
-                        star_rate
-                        </span>
-                        <span class="material-icons yellow">
-                          star_rate
-                          </span>
-                          <span class="material-icons yellow">
-                            star_rate
-                            </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item text-center p-4 half">
-            <div class="carousel-content">
-              <div class="testimonial-description">
-                <div class="text">
-                <span class="material-icons">
-                  format_quote
-                  </span>
-                  Pentru ca afacerea sa aiba success, aveti nevoie de un site creat de catre compania iWeb. Datorita promptitudinii, seriozitatii, rapiditatii si perfectiunii site-ul creat de catre ei are un mare success. Volumul de munca este la capacitate maxima si implicarea este pe masura. Colaborarea dintre mine si compania iWeb a fost una de 5 stele deoarece totul a fost foarte simplu pentru a intelege si lucra pe platforma site-ului creat. Pentru a vedea cu exacitate si in detaliu site-ul creat va invit pe www.onix-shop.com. Daca iti doresti site-ul mult visat, recomand cu incredere si siguranta iWeb!
-                  <span class="material-icons">
-                    format_quote
-                    </span>
-                  </div>
-              </div>
-              <div class="client-container">
-                <div class="client-image">
-                  <div class="image cristina"></div>
-                </div>
-                <div class="testimonial-name">
-                  Cristina
-                </div>
-                <div class="rate">
-                  <span class="material-icons yellow">
-                    star_rate
-                    </span>
-                    <span class="material-icons yellow">
-                      star_rate
-                      </span>
-                      <span class="material-icons yellow">
-                        star_rate
-                        </span>
-                        <span class="material-icons yellow">
-                          star_rate
-                          </span>
-                          <span class="material-icons yellow">
-                            star_rate
-                            </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item text-center p-4 half">
-            <div class="carousel-content">
-              <div class="testimonial-description">
-                <div class="text">
-                  <span class="material-icons">
-                    format_quote
-                    </span>
-                  Seriozitate, punctualitate si creativitate! Mi-a intrecut asteptarile! Recomand cu caldura!!!
-                  <span class="material-icons">
-                    format_quote
-                    </span>
-                </div>
-              </div>
-              <div class="client-container">
-                <div class="client-image">
-                  <div class="image ionita"></div>
-                </div>
-                <div class="testimonial-name">
-                  Ionut Daniel
-                </div>
-                <div class="rate">
-                  <span class="material-icons yellow">
-                    star_rate
-                    </span>
-                    <span class="material-icons yellow">
-                      star_rate
-                      </span>
-                      <span class="material-icons yellow">
-                        star_rate
-                        </span>
-                        <span class="material-icons yellow">
-                          star_rate
-                          </span>
-                          <span class="material-icons yellow">
-                            star_rate
-                            </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item text-center p-4 half">
-            <div class="carousel-content">
-              <div class="testimonial-description">
-                <div class="text">
-                  <span class="material-icons">
-                    format_quote
-                    </span>
-                    Seriozitate, profesionalism, promptitudine si corectitudine. Recomand tuturor celor care sunt in cautarea unor servicii calitative si cu rezultate!
-                    <span class="material-icons">
-                      format_quote
-                      </span>
-                </div>
-              </div>
-              <div class="client-container">
-                <div class="client-image">
-                  <div class="image adriana"></div>
-                </div>
-                <div class="testimonial-name">
-                  Adriana Ivanoiu
-                </div>
-                <div class="rate">
-                  <span class="material-icons yellow">
-                    star_rate
-                    </span>
-                    <span class="material-icons yellow">
-                      star_rate
-                      </span>
-                      <span class="material-icons yellow">
-                        star_rate
-                        </span>
-                        <span class="material-icons yellow">
-                          star_rate
-                          </span>
-                          <span class="material-icons yellow">
-                            star_rate
-                            </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item text-center p-4 half">
-            <div class="carousel-content">
-              <div class="testimonial-description">
-                <div class="text">
-                  <span class="material-icons">
-                    format_quote
-                    </span>
-                    Servicii de calitate. Mi-au depasit asteptarile!!!
-                    <span class="material-icons">
-                      format_quote
-                      </span>
-                </div>
-              </div>
-              <div class="client-container">
-                <div class="client-image">
-                  <div class="image alin"></div>
-                </div>
-                <div class="testimonial-name">
-                  Alin Savu
+                  {{ review.reviewedBy }}
                 </div>
                 <div class="rate">
                   <span class="material-icons yellow">
@@ -305,3 +105,77 @@
         </div>
       </div>
     </div>
+
+     <!-- presentation-website-offer section -->
+  <div class="presentation-website-offer-section">
+    <div class="section-title">
+      Ce oferim pentru un site web de prezentare?
+    </div>
+    <div class="offer-cards">
+      <div class="offer-card" *ngFor="let presentationWebsiteOffer of presentationWebsiteOffers">
+        <div class="title">
+          {{ presentationWebsiteOffer.title }}
+        </div>
+        <img [src]="presentationWebsiteOffer.imagePath" width="100px">
+        <div class="description">
+          {{ presentationWebsiteOffer.description }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- online-shop-offer section -->
+  <div class="online-shop-offer-section">
+    <div class="section-title">
+      Ce oferim pentru un magazin online?
+    </div>
+    <div class="offer-cards">
+      <div class="offer-card" *ngFor="let onlineShopOffer of onlineShopOffers">
+        <div class="title">
+          {{ onlineShopOffer.title }}
+        </div>
+        <img [src]="onlineShopOffer.imagePath" width="100px">
+        <div class="description">
+          {{ onlineShopOffer.description }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- extra services -->
+  <div class="extra-services-offer-section">
+    <div class="section-title">
+    Servicii extra
+  </div>
+  <div class="offer-cards">
+    <div class="offer-card" *ngFor="let extraServicesOffer of extraServicesOffers">
+      <div class="title">
+        {{ extraServicesOffer.title }}
+      </div>
+      <img [src]="extraServicesOffer.imagePath" width="100px">
+      <div class="description">
+        {{ extraServicesOffer.description }}
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- project steps -->
+  <div class="project-steps-section">
+    <div class="title">
+      Etapele unui proiect
+    </div>
+    <div class="project-step-card" *ngFor="let projectStep of projectSteps">
+      <div class="index-title">
+        <div class="index">
+          {{ projectStep.index }}
+        </div>
+        <div class="title">
+          {{ projectStep.title }}
+        </div>
+      </div>
+      <div class="description">
+        {{ projectStep.description }}
+      </div>
+    </div>
+  </div>

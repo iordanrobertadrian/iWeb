@@ -1,35 +1,97 @@
 @media only screen and (max-width: 650px) {
-  .carousel,
-  .about-us-section,
-  .testimonials-section {
+  .carousel {
     display: none !important;
   }
-  .afacerea-ta-banner-mobile {
+  .afacerea-ta-banner-mobile, .magazin-online-banner-mobile {
     display: block !important;
+    margin-top: 80px;
   }
-  .magazin-online-banner-mobile {
-    display: flex !important;
+  .about-us-section {
+    flex-direction: column-reverse!important;
+    margin-top: 50px;
+    .description {
+      width: 100%!important;
+      .subtitle {
+        font-size: 18px!important;
+      }
+    }
+    .banner {
+      width: 100%!important;
+      margin-right: unset!important;
+    }
+  }
+  .testimonials-section {
+    padding: 0!important;
+    margin-top: 80px!important;
+    .title {
+      font-size: 28px!important;
+      padding: 0 50px!important;
+    }
+    .testimonials-carousel {
+      display: block!important;
+      .carousel-inner {
+        .carousel-item {
+          .carousel-content {
+            .testimonial-description {
+              min-height: 362px!important;
+            }
+          }
+        }
+        .half {
+          background: linear-gradient(to bottom, #e6fcfa 80%, white 20%)!important;
+        }
+      }
+    }
+  }
+  .online-shop-offer-section, .presentation-website-offer-section, .extra-services-offer-section {
+    margin-top: 100px!important;
+    .section-title {
+      margin-bottom: 50px!important;
+    }
+    .offer-cards {
+      .offer-card {
+        margin: 50px 0px!important;
+      }
+    }
+  }
+  .project-steps-section {
+    .title {
+    }
+    .project-step-card {
+      
+      .index-title {
+        flex-direction: column!important;
+        .index {
+          margin-right: 0px!important;
+          margin-bottom: 25px!important;
+        }
+        .title {
+          font-size: 20px!important;
+          text-align: center!important;
+        }
+      }
+      .description {
+        font-size: 14px!important;
+        text-align: center!important;
+      }
+    }
   }
 }
 
 // Banners section mobile
-.magazin-online-banner-mobile {
-  height: 90vh;
-  flex-direction: column;
-  justify-content: center;
-}
 .magazin-online-banner-mobile,
 .afacerea-ta-banner-mobile {
   display: none;
   .title {
     font-family: "Black Ops One", cursive;
-    font-size: 13px;
+    font-size: 28px;
     text-align: center;
+    padding: 0 50px;
   }
   .subtitle {
     font-family: "Black Ops One", cursive;
     text-align: center;
-    font-size: 15px;
+    font-size: 19px;
   }
 }
 
@@ -53,12 +115,13 @@
     align-items: center;
     .title {
       font-family: "Black Ops One", cursive;
-      font-size: 36px;
+      font-size: 28px;
     }
     .subtitle {
       margin-top: 20px;
+      margin-bottom: 50px;
       font-family: "Black Ops One", cursive;
-      font-size: 22px;
+      font-size: 19px;
     }
   }
 }
@@ -70,8 +133,8 @@
   .title {
     font-family: "Black Ops One", cursive;
     text-align: center;
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 34px;
+    margin-bottom: 50px;
   }
   .client-testimonial-carousel {
     .carousel-inner {
@@ -104,24 +167,7 @@
                 width: 100px;
                 height: 100px;
                 border-radius: 50%;
-              }
-              .daniel {
-                background-image: url("../../../assets/Clients/daniel.jpg");
-              }
-              .cristina {
-                background-image: url("../../../assets/Clients/cristina.jpg");
-              }
-              .ionita {
-                background-image: url("../../../assets/Clients/ionita.jpg");
-              }
-              .alin {
-                background-image: url("../../../assets/Clients/alin.jpg");
-              }
-              .ionut {
-                background-image: url("../../../assets/Clients/ionut.jpg");
-              }
-              .adriana {
-                background-image: url("../../../assets/Clients/adriana.jpg");
+                box-shadow: 0 0 0 3px #e78267;
               }
             }
             .testimonial-name {
@@ -136,9 +182,98 @@
         }
       }
       .half {
-        background: linear-gradient(to bottom, #e6fcfa 70%, white 30%);
+        background: linear-gradient(to bottom, #AFEDAB 70%, white 30%);
         min-height: 365px;
       }
+    }
+  }
+}
+
+//online-shop-offer-section && presentation-website-offer-section && extra-services-offer-section
+.online-shop-offer-section, .presentation-website-offer-section, .extra-services-offer-section {
+  margin-top: 200px;
+  padding: 0 50px;
+  .section-title {
+    font-family: "Black Ops One", cursive;
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  .offer-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .offer-card {
+      margin: 50px;
+      padding: 25px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 335px;
+      .title {
+        font-family: "Black Ops One", cursive;
+        margin-bottom: 25px;
+        text-align: center;
+      }
+      img {
+  
+      }
+      .description {
+        font-family: "Black Ops One", cursive;
+        margin-top: 25px;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+// project steps section
+.project-steps-section {
+  margin-top: 200px;
+  padding: 0 50px;
+  .title {
+    font-family: "Black Ops One", cursive;
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  .project-step-card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 50px;
+    margin-bottom: 100px;
+    .index-title {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+      .index {
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        padding: 25px;
+        background: black;
+        color: #60DB57;
+        font-size: 25px;
+        font-family: "Black Ops One", cursive;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 25px;
+      }
+      .title {
+        font-family: "Black Ops One", cursive;
+        font-size: 25px;
+        margin-bottom: 0px;
+      }
+    }
+    .description {
+      font-family: "Black Ops One", cursive;
+      font-size: 17px;
     }
   }
 }
