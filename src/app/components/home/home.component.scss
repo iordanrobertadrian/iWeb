@@ -1,4 +1,16 @@
 @media only screen and (max-width: 650px) {
+  .small-content {
+    padding: 50px!important;
+  }
+.section-title {
+  font-size: 28px!important;
+}
+.section-subtitle {
+  font-size: 20px!important;
+}
+.section-description {
+  font-size: 15px!important;
+}
   .carousel {
     display: none !important;
   }
@@ -8,39 +20,37 @@
     margin-top: 80px;
   }
   .what-we-offer-section {
-    margin-top: 100px;
-    margin-bottom: 100px!important;
     .online-shop-section, .presentation-website-section, .logo-section, .ux-ui-section, .unique-section {
       flex-direction: column-reverse!important;
-      margin-top: 100px!important;
-      img, .description {
+      margin-bottom: 100px;
+      img, .section-subtitle {
         width: 100%!important;
       }
-      .description {
-        font-size: 28px!important;
+      .section-subtitle {
+        margin-bottom: 50px!important;
       }
     }
   }
   .about-us-section {
     flex-direction: column-reverse !important;
-    margin-top: 50px;
     .description {
       width: 100% !important;
-      .subtitle {
-        font-size: 18px !important;
+      .section-title {
+        margin-bottom: 100px!important;
+      }
+      .section-description {
+        margin-bottom: 50px!important;
+        font-size: 20px!important;
       }
     }
     .banner {
-      width: 100% !important;
       margin-right: unset !important;
+      width: 100%!important;
     }
   }
   .testimonials-section {
     padding: 0 !important;
-    margin-top: 80px !important;
     .title {
-      font-size: 28px !important;
-      padding: 0 50px !important;
     }
     .testimonials-carousel {
       display: block !important;
@@ -65,9 +75,7 @@
   .online-shop-offer-section,
   .presentation-website-offer-section,
   .extra-services-offer-section {
-    margin-top: 100px !important;
     .section-title {
-      margin-bottom: 50px !important;
     }
     .offer-cards {
       .offer-card {
@@ -98,16 +106,28 @@
   }
 }
 
-// black and white
-.black-and-white {
-  background-color: black;
-  color: white;
+//small-content
+.small-content {
+  padding: 100px 50px;
 }
-
-// black and green
-.black-and-green {
-  background-color: black;
-  color: #60DB57;
+//section-title
+.section-title {
+  font-family: "Black Ops One", cursive;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+//section-subtitle
+.section-subtitle {
+  font-family: "Black Ops One", cursive;
+  font-size: 28px;
+  text-align: center;
+}
+//section-description
+.section-description {
+  font-family: "Black Ops One", cursive;
+  font-size: 20px;
+  text-align: center;
 }
 
 // Banners section mobile
@@ -123,35 +143,26 @@
   .subtitle {
     font-family: "Black Ops One", cursive;
     text-align: center;
-    font-size: 19px;
+    font-size: 20px;
   }
 }
 // What we offer section
 .what-we-offer-section {
-  margin-bottom: 200px;
-  padding: 0px 50px;
   display: flex;
   flex-direction: column;
   width: 100%;
-  .title {
-    font-family: "Black Ops One", cursive;
-    text-align: center;
-    font-size: 36px;
+  .section-title {
   }
   .online-shop-section, .presentation-website-section, .logo-section, .ux-ui-section, .unique-section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 200px;
     img {
       width: 50%;
     }
-    .description {
+    .section-subtitle {
       width: 50%;
-      font-family: "Black Ops One", cursive;
-      font-size: 34px;
-      text-align: center;
     }
   }
   .presentation-website-section {
@@ -163,7 +174,6 @@
 }
 // About us section
 .about-us-section {
-  padding: 0px 50px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -179,23 +189,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .title {
-      font-family: "Black Ops One", cursive;
-      font-size: 28px;
+    .section-title {
+      margin-bottom: 25px;
     }
-    .subtitle {
-      margin-top: 20px;
-      margin-bottom: 50px;
-      font-family: "Black Ops One", cursive;
-      font-size: 19px;
+    .section-description {
     }
   }
 }
 
 //Testimonials section
 .testimonials-section {
-  margin-top: 200px;
-  padding: 0px 350px;
   .title {
     font-family: "Black Ops One", cursive;
     text-align: center;
@@ -259,13 +262,7 @@
 .online-shop-offer-section,
 .presentation-website-offer-section,
 .extra-services-offer-section {
-  margin-top: 200px;
-  padding: 0 50px;
   .section-title {
-    font-family: "Black Ops One", cursive;
-    font-size: 34px;
-    text-align: center;
-    margin-bottom: 100px;
   }
   .offer-cards {
     display: flex;
@@ -300,13 +297,7 @@
 
 // project steps section
 .project-steps-section {
-  margin-top: 200px;
-  padding: 0 50px;
-  .title {
-    font-family: "Black Ops One", cursive;
-    font-size: 34px;
-    text-align: center;
-    margin-bottom: 100px;
+  .section-title {
   }
   .project-step-card {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -332,15 +323,10 @@
         align-items: center;
         margin-right: 25px;
       }
-      .title {
-        font-family: "Black Ops One", cursive;
-        font-size: 25px;
-        margin-bottom: 0px;
+      .section-subtitle {
       }
     }
-    .description {
-      font-family: "Black Ops One", cursive;
-      font-size: 17px;
+    .section-description {
     }
   }
 }
