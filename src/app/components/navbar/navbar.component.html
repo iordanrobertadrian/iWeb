@@ -2,7 +2,7 @@
     <img src="../../../assets/logo/iWeb-transparent.png" alt="iWeb">
     <div class="menu">
         <div class="button hvr-underline-from-left" routerLink="/acasa">Acasa</div>
-        <div class="button hvr-underline-from-left">Proiecte</div>
+        <div class="button hvr-underline-from-left" routerLink="/proiecte">Proiecte</div>
         <div class="button hvr-underline-from-left">Despre noi</div>
         <div class="button hvr-underline-from-left" routerLink="/contact">Contact</div>
     </div>
@@ -13,7 +13,7 @@
 </div>
 <div class="mobile-menu" *ngIf="showMobileMenu">
     <div class="mobile-button" routerLink="/acasa" (click)="toggleMenu()">Acasa</div>
-    <div class="mobile-button" (click)="toggleMenu()">Proiecte</div>
+    <div class="mobile-button" routerLink="/proiecte" (click)="toggleMenu()">Proiecte</div>
     <div class="mobile-button" (click)="toggleMenu()">Despre noi</div>
     <div class="mobile-button" routerLink="/contact" (click)="toggleMenu()">Contact</div>
 </div>

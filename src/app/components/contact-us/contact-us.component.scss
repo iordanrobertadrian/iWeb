@@ -1,7 +1,10 @@
 @media only screen and (max-width: 650px) {
+  .title {
+    margin: 50px 0 0 0!important;
+  }
     .contact-us-form {
-        padding: 50px 25px!important;
-        flex-direction: column-reverse!important;
+      padding: 0 25px 50px 25px!important;
+      flex-direction: column-reverse!important;
     }
     form, img {
       width: 100%!important;
@@ -9,6 +12,12 @@
     img {
       margin-left: 0px!important;
     }
+}
+.title {
+  font-family: "Black Ops One", cursive;
+    font-size: 36px;
+    text-align: center;
+    margin: 100px 0;
 }
 *:focus {
   outline: none;

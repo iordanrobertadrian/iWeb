@@ -16,10 +16,12 @@ interface ProjectSteps {
   title: string;
   description: string;
 }
-interface Project {
+export interface Project {
   title: string;
   linkURL?: string;
   imagePath: string;
+  description?: string;
+  badge?: string;
 }
 @Component({
   selector: 'app-home',

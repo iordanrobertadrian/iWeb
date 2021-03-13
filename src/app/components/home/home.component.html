@@ -40,6 +40,21 @@
     <img class="magazin-online-mobile" src="../../../assets/banners-section/afacerea-ta-banner-mobile.svg" width="100%">
   </div>
 
+  <!-- about us section -->
+  <div class="about-us-section small-content">
+    <div class="banner">
+      <img src="../../../assets/about-us-section/despre-noi-banner.svg">
+    </div>
+    <div class="description">
+      <div class="section-title">
+        Despre Noi
+      </div>
+      <div class="section-description">
+        Compania noastra ofera o gama larga de servicii IT, cum ar fi dezvoltarea web, designul web, crearea de site-uri personalizate, magazine online si SEO.
+      </div>
+    </div>
+  </div>
+
   <!-- what we offer -->
   <div class="what-we-offer-section small-content">
     <div class="section-title">
@@ -77,73 +92,8 @@
     </div>
 
   </div>
-  <!-- about us section -->
-  <div class="about-us-section small-content">
-    <div class="banner">
-      <img src="../../../assets/about-us-section/despre-noi-banner.svg">
-    </div>
-    <div class="description">
-      <div class="section-title">
-        Despre Noi
-      </div>
-      <div class="section-description">
-        Compania noastra ofera o gama larga de servicii IT, cum ar fi dezvoltarea web, designul web, crearea de site-uri personalizate, magazine online si SEO.
-      </div>
-    </div>
-  </div>
 
-  <!-- testimonials section -->
-  <div class="testimonials-section small-content">
-    <div class="section-title">
-      Ce parere au clientii nostri despre noi?
-    </div>
-      <div id="client-testimonial-carousel" class="carousel testimonials-carousel slide client-testimonial-carousel" data-ride="carousel" style="min-height: 200px;" data-pause="true">
-        <div class="carousel-inner" role="listbox">
-          <div class="carousel-item text-center p-4 half" *ngFor="let review of reviews | async, let isFirst = first" [class.active]="isFirst">
-            <div class="carousel-content">
-              <div class="testimonial-description">
-                <div class="text">
-                  <span class="material-icons">
-                    format_quote
-                    </span>
-                    {{ review.description }}
-                    <span class="material-icons">
-                      format_quote
-                      </span>
-                </div>
-              </div>
-              <div class="client-container">
-                <div class="client-image">
-                  <div class="image daniel" [ngStyle]="{'background-image': 'url('+ review.imageURL+')'}"></div>
-                </div>
-                <div class="testimonial-name">
-                  {{ review.reviewedBy }}
-                </div>
-                <div class="rate">
-                  <span class="material-icons yellow">
-                    star_rate
-                    </span>
-                    <span class="material-icons yellow">
-                      star_rate
-                      </span>
-                      <span class="material-icons yellow">
-                        star_rate
-                        </span>
-                        <span class="material-icons yellow">
-                          star_rate
-                          </span>
-                          <span class="material-icons yellow">
-                            star_rate
-                            </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-     <!-- presentation-website-offer section -->
+  <!-- presentation-website-offer section -->
   <div class="presentation-website-offer-section small-content">
     <div class="section-title">
       Ce oferim pentru un site web de prezentare?
@@ -197,26 +147,6 @@
   </div>
   </div>
 
-  <!-- project steps -->
-  <div class="project-steps-section small-content">
-    <div class="section-title">
-      Etapele unui proiect
-    </div>
-    <div class="project-step-card" *ngFor="let projectStep of projectSteps">
-      <div class="index-title">
-        <div class="index">
-          {{ projectStep.index }}
-        </div>
-        <div class="section-subtitle">
-          {{ projectStep.title }}
-        </div>
-      </div>
-      <div class="section-description">
-        {{ projectStep.description }}
-      </div>
-    </div>
-  </div>
-
   <!-- projects section -->
   <div class="projects-section small-content">
     <div class="section-title">
@@ -233,3 +163,74 @@
       </div>
     </div>
   </div>
+
+   <!-- testimonials section -->
+   <div class="testimonials-section small-content">
+    <div class="section-title">
+      Ce parere au clientii nostri despre noi?
+    </div>
+      <div id="client-testimonial-carousel" class="carousel testimonials-carousel slide client-testimonial-carousel" data-ride="carousel" style="min-height: 200px;" data-pause="true">
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item text-center p-4 half" *ngFor="let review of reviews | async, let isFirst = first" [class.active]="isFirst">
+            <div class="carousel-content">
+              <div class="testimonial-description">
+                <div class="text">
+                  <span class="material-icons">
+                    format_quote
+                    </span>
+                    {{ review.description }}
+                    <span class="material-icons">
+                      format_quote
+                      </span>
+                </div>
+              </div>
+              <div class="client-container">
+                <div class="client-image">
+                  <div class="image daniel" [ngStyle]="{'background-image': 'url('+ review.imageURL+')'}"></div>
+                </div>
+                <div class="testimonial-name">
+                  {{ review.reviewedBy }}
+                </div>
+                <div class="rate">
+                  <span class="material-icons yellow">
+                    star_rate
+                    </span>
+                    <span class="material-icons yellow">
+                      star_rate
+                      </span>
+                      <span class="material-icons yellow">
+                        star_rate
+                        </span>
+                        <span class="material-icons yellow">
+                          star_rate
+                          </span>
+                          <span class="material-icons yellow">
+                            star_rate
+                            </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+ <!-- project steps -->
+ <div class="project-steps-section small-content">
+  <div class="section-title">
+    Etapele unui proiect
+  </div>
+  <div class="project-step-card" *ngFor="let projectStep of projectSteps">
+    <div class="index-title">
+      <div class="index">
+        {{ projectStep.index }}
+      </div>
+      <div class="section-subtitle">
+        {{ projectStep.title }}
+      </div>
+    </div>
+    <div class="section-description">
+      {{ projectStep.description }}
+    </div>
+  </div>
+</div>
