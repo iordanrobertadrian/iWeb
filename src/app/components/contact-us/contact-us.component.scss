@@ -6,6 +6,9 @@
     form, img {
       width: 100%!important;
     }
+    img {
+      margin-left: 0px!important;
+    }
 }
 *:focus {
   outline: none;
@@ -27,6 +30,7 @@ form {
 img {
   width: 50%;
   margin-left: 100px;
+  height: 550px;
 }
 .input-group {
   display: block;
