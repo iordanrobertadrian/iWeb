@@ -13,6 +13,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { HomeComponent } from './components/home/home.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
     NavbarComponent,
     HomeComponent,
     ContactUsComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,10 @@ import { ProjectsComponent } from './components/projects/projects.component';
     AngularFireModule.initializeApp(environment.firebase),
     MatMenuModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
