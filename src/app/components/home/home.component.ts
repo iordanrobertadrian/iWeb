@@ -16,6 +16,11 @@ interface ProjectSteps {
   title: string;
   description: string;
 }
+interface Project {
+  title: string;
+  linkURL?: string;
+  imagePath: string;
+}
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -229,6 +234,33 @@ export class HomeComponent implements OnInit {
       index: '4',
       description: 'Site-ul web realizat este testat, sunt remediate erorile descoperite si sunt implementate ultimele retușuri solicitate de catre beneficiar. De asemenea, site-ul web este transferat pe domeniul principal, dacă acesta a fost dezvoltat pe un subdomeniu sau pe un alt server si este lansat publicului.',
       title: 'Finalizarea si lansarea site-ului web:'
+    }
+  ]
+  projects: Project[] = [
+    {
+      title: 'ONIX SHOP',
+      imagePath: '../../../assets/projects/onix-shop.svg',
+      linkURL: 'https://www.onix-shop.ro'
+    },
+    {
+      title: 'AMY VILLAGE',
+      imagePath: '../../../assets/projects/amy-village.svg',
+      linkURL: 'https://www.amy--village.ro'
+    },
+    {
+      title: 'BEST MOMENTS',
+      imagePath: '../../../assets/projects/best-moments.svg',
+      linkURL: 'https://www.bestmoments-shop.com'
+    },
+    {
+      title: 'YURI SHOP',
+      imagePath: '../../../assets/projects/yuri-shop.svg',
+      linkURL: 'https://www.yurishop.ro'
+    },
+    {
+      title: 'ONLINE GAME SHOP',
+      imagePath: '../../../assets/projects/online-shop.svg',
+      linkURL: 'https://onlinegameshop-1603f.web.app'
     }
   ]
   constructor(private afs: AngularFirestore) { }

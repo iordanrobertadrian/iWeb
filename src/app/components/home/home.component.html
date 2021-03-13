@@ -216,3 +216,20 @@
       </div>
     </div>
   </div>
+
+  <!-- projects section -->
+  <div class="projects-section small-content">
+    <div class="section-title">
+      Cele mai recente proiecte
+    </div>
+    <div class="projects">
+      <div class="project-card hvr-grow" *ngFor="let project of projects">
+        <a [href]="project.linkURL">
+          <div class="section-subtitle">
+            {{ project.title }}
+          </div>
+          <img [src]="project.imagePath">
+        </a>
+      </div>
+    </div>
+  </div>
