@@ -1,4 +1,4 @@
-<div class="navbar-container-desktop">
+<div class="navbar-container-desktop" id="navbar">
     <img src="../../../assets/logo/iWeb-transparent.png" alt="iWeb" routerLink="/acasa">
     <div class="menu">
         <div class="button hvr-underline-from-left" routerLink="/acasa">Acasa</div>
@@ -17,6 +17,9 @@
 <div class="mobile-menu" *ngIf="showMobileMenu">
     <div class="mobile-button" routerLink="/acasa" (click)="toggleMenu()">Acasa</div>
     <div class="mobile-button" routerLink="/proiecte" (click)="toggleMenu()">Proiecte</div>
+    <div class="mobile-button" routerLink="/acasa" [fragment]="'magazin-online'" (click)="toggleMenu()">Magazin Online</div>
+    <div class="mobile-button" routerLink="/acasa" [fragment]="'site-web-prezentare'" (click)="toggleMenu()">Site Web Prezentare</div>
+    <div class="mobile-button" routerLink="/acasa" [fragment]="'review-uri'" (click)="toggleMenu()">Review-uri</div>
     <div class="mobile-button" routerLink="/despre-noi" (click)="toggleMenu()">Despre noi</div>
     <div class="mobile-button" routerLink="/contact" (click)="toggleMenu()">Contact</div>
 </div>
