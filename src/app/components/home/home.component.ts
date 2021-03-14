@@ -30,188 +30,189 @@ export interface Project {
 })
 export class HomeComponent implements OnInit {
   reviews: Observable<Review[]>
+
   onlineShopOffers: OfferCard[] = [
     {
       title: 'STOCURI',
-      description: 'Administrarea stocurilor, modificarea lor in timp real',
+      description: 'Administrarea si modificarea in timp real a stocurilor.',
       imagePath: '../../../assets/flat-icons/stock.svg'
     },
     {
       title: 'COS CUMPARATURI',
-      description: 'Procesare comenzi in mod automat,direct pe site',
+      description: 'Procesarea comenzilor automat direct pe site.',
       imagePath: '../../../assets/flat-icons/shopping-cart.svg'
     },
     {
       title: 'LIVRARE',
-      description: 'Variante de calcul costuri livrare si urmarire expediere',
+      description: 'Variante de calcul a costurilor de livrare, urmarire expediere.',
       imagePath: '../../../assets/flat-icons/shipping.svg'
     },
     {
       title: 'PLATA ONLINE',
-      description: 'Accepta plata cu cardul',
+      description: 'Integrare modul pentru plata cu cardul online.',
       imagePath: '../../../assets/flat-icons/online-payment.svg'
     },
     {
       title: 'DISCOUNT',
-      description: 'Ofera reduceri clientilor fideli prin vouchere si coduri cupon',
+      description: 'Ofera discount clientilor tai fideli prin vouchere si coduri cupon.',
       imagePath: '../../../assets/flat-icons/discount.svg'
     },
     {
       title: 'FACTURARE',
-      description: 'Administrare comenzi si facturi direct din site',
+      description: 'Administrarea comenzilor si facturilor direct din panoul de administrator.',
       imagePath: '../../../assets/flat-icons/billing.svg'
     },
     {
       title: 'PRODUSE SI CATEGORII',
-      description: 'Organizare produse pe categorii si subcategorii',
+      description: 'Organizarea produselor pe categorii si subcategorii.',
       imagePath: '../../../assets/flat-icons/products.svg'
     },
     {
       title: 'PRODUSE VARIABILE',
-      description: 'Caracteristici diferite: marime, culoare, dimensiuni',
+      description: 'Caracteristici diferite ale produselor : marime, culoare, dimensiuni.',
       imagePath: '../../../assets/flat-icons/products2.svg'
     },
     {
       title: 'DESGIN WEB RESPONSIVE',
-      description: 'Compatibilitate cu dispozitivele mobile',
+      description: 'Compatibilitate cu orice tip de dispozitiv.',
       imagePath: '../../../assets/flat-icons/responsive-website.svg'
     },
     {
       title: 'PANOU DE ADMINISTRARE',
-      description: 'Poti adauga usor produse sau administra comenzile',
+      description: 'Poti vizualiza, modifica si adauga orice tine de site-ul tau, cum ar fii produsele, comenzile, etc.',
       imagePath: '../../../assets/flat-icons/admin.svg'
     },
     {
       title: 'GALERIE FOTO/VIDEO',
-      description: 'Integrate pe paginile de prezentare ale produselor',
-      imagePath: '../../../assets/flat-icons/slideshow.svg'
+      description: 'Integrare galerie foto/video pe orice pagina a magazinului tau.',
+      imagePath: '../../../assets/flat-icons/gallery.svg'
     },
     {
       title: 'SLIDESHOW',
-      description: 'Prezentarea produselor pe prima pagina a site-ului',
+      description: 'Prezentarea produselor pe prima pagina a magazinului tau.',
       imagePath: '../../../assets/flat-icons/slideshow.svg'
     },
     {
       title: 'OPTIMIZARE SEO',
-      description: 'De la structura site-ului la setarea meta tag-urilor',
+      description: 'De la structura site-ului la setarea meta tag-urilor pe fiecare pagina a magazinului tau.',
       imagePath: '../../../assets/flat-icons/seo.svg'
     },
     {
       title: 'FORUMAR DE CONTACT',
-      description: 'Protejat anti-SPAM prin Google reCaptcha',
+      description: 'Lasati clientii sa comunice cu tine intr-un mod rapid si eficient.',
       imagePath: '../../../assets/flat-icons/business-card.svg'
     },
     {
       title: 'CONFORMITATE GDPR',
-      description: 'Pagini cu politici de confidentialitate a cookie-urilor',
+      description: 'Pagini cu politici de confidentialitate a cookie-urilor.',
       imagePath: '../../../assets/flat-icons/gdpr.svg'
     },
     {
       title: 'MULTILANGUAGE',
-      description: 'Extensie site web in mai multe limbi',
+      description: 'Extensie pentru ca magazinul dumneavoastra sa fie translatat in mai multe limbi.',
       imagePath: '../../../assets/flat-icons/translate.svg'
     },
     {
       title: 'SISTEM DE REZERVARE',
-      description: 'De la rezervare camere hotel la planificator agenda',
+      description: 'Rezerva de la camere de hotel pana la planificare agenda.',
       imagePath: '../../../assets/flat-icons/reserved.svg'
     },
     {
       title: 'PORTOFOLIU',
-      description: 'Sectiune cu proiecte realizate, albume foto sau video',
+      description: 'Sectiune cu proiecte realizate, slidere foto sau video.',
       imagePath: '../../../assets/flat-icons/resume.svg'
     },
     {
       title: 'DIVERSE',
-      description: 'Alte functii particulare afacerii dvs. ce pot fi integrate in site',
+      description: 'Alte plugin-uri care sunt necesare magazinului dumneavoastra.',
       imagePath: '../../../assets/flat-icons/miscellaneous.svg'
     },
     {
       title: 'GARANTIE',
-      description: '7 zile de garantie si remediere gratuita a erorilor',
+      description: 'Oferim 7 zile de garantie si remediere gratuita a erorilor.',
       imagePath: '../../../assets/flat-icons/guarantee.svg'
     },
     {
       title: 'LOCALIZARE',
-      description: 'Integrare module precum google maps etc.',
+      description: 'Integrare Google Maps',
       imagePath: '../../../assets/flat-icons/place.svg'
     }
   ]
   presentationWebsiteOffers: OfferCard[] = [
     {
       title: 'DESGIN WEB RESPONSIVE',
-      description: 'Compatibilitate cu dispozitivele mobile',
+      description: 'Compatibilitate cu orice tip de dispozitiv.',
       imagePath: '../../../assets/flat-icons/responsive-website.svg'
     },
     {
       title: 'PANOU DE ADMINISTRARE',
-      description: 'Poti adauga usor produse sau administra comenzile',
+      description: 'Poti vizualiza, modifica si adauga orice tine de site-ul tau.',
       imagePath: '../../../assets/flat-icons/admin.svg'
     },
     {
       title: 'GALERIE FOTO/VIDEO',
-      description: 'Integrate pe paginile de prezentare ale produselor',
-      imagePath: '../../../assets/flat-icons/slideshow.svg'
+      description: 'Integrare galerie foto/video pe orice pagina a site-ului tau de prezentare.',
+      imagePath: '../../../assets/flat-icons/gallery.svg'
     },
     {
       title: 'SLIDESHOW',
-      description: 'Prezentarea produselor pe prima pagina a site-ului',
+      description: 'Prezentarea produselor pe prima pagina a site-ului tau de prezentare.',
       imagePath: '../../../assets/flat-icons/slideshow.svg'
     },
     {
       title: 'OPTIMIZARE SEO',
-      description: 'De la structura site-ului la setarea meta tag-urilor',
+      description: 'De la structura site-ului la setarea meta tag-urilor pe fiecare pagina a site-ului tau de prezentare.',
       imagePath: '../../../assets/flat-icons/seo.svg'
     },
     {
       title: 'FORUMAR DE CONTACT',
-      description: 'Protejat anti-SPAM prin Google reCaptcha',
+      description: 'Lasati clientii sa comunice cu tine intr-un mod rapid si eficient.',
       imagePath: '../../../assets/flat-icons/business-card.svg'
     },
     {
       title: 'CONFORMITATE GDPR',
-      description: 'Pagini cu politici de confidentialitate a cookie-urilor',
+      description: 'Pagini cu politici de confidentialitate a cookie-urilor.',
       imagePath: '../../../assets/flat-icons/gdpr.svg'
     },
     {
       title: 'MULTILANGUAGE',
-      description: 'Extensie site web in mai multe limbi',
+      description: 'Extensie pentru ca site-ului tau de prezentare sa fie translatat in mai multe limbi.',
       imagePath: '../../../assets/flat-icons/translate.svg'
     },
     {
       title: 'SISTEM DE REZERVARE',
-      description: 'De la rezervare camere hotel la planificator agenda',
+      description: 'Rezerva de la camere de hotel pana la planificare agenda.',
       imagePath: '../../../assets/flat-icons/reserved.svg'
     },
     {
       title: 'PORTOFOLIU',
-      description: 'Sectiune cu proiecte realizate, albume foto sau video',
+      description: 'Sectiune cu proiecte realizate, slidere foto sau video.',
       imagePath: '../../../assets/flat-icons/resume.svg'
     },
     {
       title: 'DIVERSE',
-      description: 'Alte functii particulare afacerii dvs. ce pot fi integrate in site',
+      description: 'Alte plugin-uri care sunt necesare site-ului tau de prezentare.',
       imagePath: '../../../assets/flat-icons/miscellaneous.svg'
     },
     {
       title: 'GARANTIE',
-      description: '7 zile de garantie si remediere gratuita a erorilor',
+      description: 'Oferim 7 zile de garantie si remediere gratuita a erorilor.',
       imagePath: '../../../assets/flat-icons/guarantee.svg'
     },
     {
       title: 'LOCALIZARE',
-      description: 'Integrare module precum google maps etc.',
+      description: 'Integrare Google Maps',
       imagePath: '../../../assets/flat-icons/place.svg'
     }
   ]
   extraServicesOffers: OfferCard[] = [
     {
-      description: 'In functie de bugetul de care dispuneti, putem oferi mentenanta web lunară sau la cerere (când este nevoie). Aceasta presupune actualizari ale platformei CMS, verificari ale logurilor de erori si securitate si remedierea problemelor întalnite, realizarea de backup-uri sau alte activitati ce tin de administrarea site-ului web',
+      description: 'Va punem la dispozitie in functie de bugetul dumneavoastra administrarea site-ului si mentenanta acestuia care poate fi lunara sau "urgenta"(presupune interventia noastra rapida / problema).',
       title: 'ADMINISTRARE SI MENTENANTA',
       imagePath: '../../../assets/flat-icons/mentenance.svg'
     },
     {
-      description: 'Fie ca este vorba de "link building" personalizat sau campanii de publicitate prin Google Adwords sau Facebook Ads, Dream Webdesign se poate ocupa de configurarile necesare ca rezultatele obtinute în urma promovarii să aiba un impact maxim',
+      description: 'Oferim campanii de publicitate Google AdWords si Facebook Axds, iWeb se poate ocupa de configurarile necesare ca rezultatele obtinute în urma promovarii să aiba un impact maxim',
       title: 'CAMPANII DE PROMOVARE ONLINE',
       imagePath: '../../../assets/flat-icons/online-promotion.svg'
     }
@@ -219,23 +220,23 @@ export class HomeComponent implements OnInit {
   projectSteps: ProjectSteps[] = [
     {
       index: '1',
-      description: 'Primul pas în realizarea unui site web il reprezintă colectarea datelor și informasiilor necesare, evaluarea volumului de muncă pe care il implica, precum si a costurilor ce rezulta din acesta. Acum este creionata structura viitorului site si sunt transmise (de beneficiar catre iWeb) toate materialele necesare, de la texte si imagini la videoclipuri sau alte materiale ce se doresc a fi integrate în viitorul site web.',
-      title: 'Colectarea informatiilor despre viitorul site web:'
+      description: 'Primul pas in realizarea site-ului web il reprezinta colectarea datelor si a informatiilor necesare, evaluarea volumului de munca pe care il implica dezvoltarea site-ului, precum si a costurilor rezultate din acesta. Necesita transmiterea materialelor necesare, de la texte si imagini la videoclipuri sau alte materiale ce se doresc a fi integrate in site-ul dumneavoastra.',
+      title: 'Colectarea informatiilor privind viitorul site web:'
     },
     {
       index: '2',
-      description: 'Pe baza informatiilor furnizate, designerii nostri se vor ocupa de realizarea unei prime variante a site-ului web. Aceasta va reflecta propria viziune, și reprezinta un model pentru beneficiar. Acolo unde lipsesc informatii, vor fi folosite unele implicite, iar în cazul imaginilor vom folosi unele potrivite, licentiate pentru uzul comun, pe care le achizitionam online.Primul pas în realizarea unui site web il reprezinta colectarea datelor si informasiilor necesare, evaluarea volumului de muncă pe care il implica, precum si a costurilor ce rezulta din acesta. Acum este creionata structura viitorului site si sunt transmise (de beneficiar catre iWeb) toate materialele necesare, de la texte si imagini la videoclipuri sau alte materiale ce se doresc a fi integrate în viitorul site web.',
-      title: 'Realizarea primei variante a site-ului web:'
+      description: 'Pe baza informatiilor furnizate, designerii nostri se vor ocupa de realizarea unei prime variante de mock-up a site-ului web. In functie de acest mock-up vom putea merge mai departe la pasul 3.',
+      title: 'Realizarea primului mock-up a site-ului web:'
     },
     {
       index: '3',
-      description: 'Puteti veni cu oricate revizuiri doriti asupra site-ului, asa încat la final acesta sa arate exact cum ati dorit. Aceste revizuiri nu presupun schimbarea termenilor contractuali, adaugarea de noi functii sau capabilitati site-ului, ci se refera strict la modificările de grafica, structura si continut.',
-      title: 'Revizuirea site-ului web:'
+      description: 'Acest pas reprezinta implementarea tuturor informatiilor transmise de catre beneficiar, texte, poze, plugin-uri, astfel incat site-ul sa fie compatibil pe orice tip de dispozitiv, sa respecte toate informatiile si indicatiile beneficiarului si sa fie functional din toate punctele de vedere.',
+      title: 'Implementarea site-ului web:'
     },
     {
       index: '4',
-      description: 'Site-ul web realizat este testat, sunt remediate erorile descoperite si sunt implementate ultimele retușuri solicitate de catre beneficiar. De asemenea, site-ul web este transferat pe domeniul principal, dacă acesta a fost dezvoltat pe un subdomeniu sau pe un alt server si este lansat publicului.',
-      title: 'Finalizarea si lansarea site-ului web:'
+      description: 'Ultimul pas este cel mai important si anume, site-ul web realizat este testat, sunt remediate erorile descoperite si sunt implementate ultimele retusuri solicitate de catre beneficiar. De asemenea, site-ul web este transferat pe domeniul principal, daca acesta a fost dezvoltat pe un subdomeniu sau pe un alt server si este lansat publicului.',
+      title: 'Finalizarea, testarea si lansarea site-ului web:'
     }
   ]
   projects: Project[] = [
@@ -270,5 +271,4 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.reviews = this.afs.collection<Review>('Reviews').valueChanges();
   }
-
 }

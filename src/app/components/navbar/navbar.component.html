@@ -1,8 +1,11 @@
 <div class="navbar-container-desktop">
-    <img src="../../../assets/logo/iWeb-transparent.png" alt="iWeb">
+    <img src="../../../assets/logo/iWeb-transparent.png" alt="iWeb" routerLink="/acasa">
     <div class="menu">
         <div class="button hvr-underline-from-left" routerLink="/acasa">Acasa</div>
         <div class="button hvr-underline-from-left" routerLink="/proiecte">Proiecte</div>
+        <div class="button hvr-underline-from-left" routerLink="/acasa" [fragment]="'magazin-online'">Magazin Online</div>
+        <div class="button hvr-underline-from-left" routerLink="/acasa" [fragment]="'site-web-prezentare'">Site Web Prezentare</div>
+        <div class="button hvr-underline-from-left" routerLink="/acasa" [fragment]="'review-uri'">Review-uri</div>
         <div class="button hvr-underline-from-left" routerLink="/despre-noi">Despre noi</div>
         <div class="button hvr-underline-from-left" routerLink="/contact">Contact</div>
     </div>

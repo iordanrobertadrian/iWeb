@@ -1,0 +1,16 @@
+// Right nav
+.right-nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 99;
+    img {
+      width: 25px;
+      height: 25px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+  }

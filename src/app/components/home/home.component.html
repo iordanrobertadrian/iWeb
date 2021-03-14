@@ -1,3 +1,4 @@
+
 <!-- desktop carousel banners -->
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-pause="true">
     <div class="carousel-inner">
@@ -50,7 +51,7 @@
         Despre Noi
       </div>
       <div class="section-description">
-        Compania noastra ofera o gama larga de servicii IT, cum ar fi dezvoltarea web, designul web, crearea de site-uri personalizate, magazine online si SEO.
+        Compania iWeb ofera servicii profesionale in domeniul IT, cum ar fi dezvoltarea web, concept unic in ceea ce priveste design-ul web (UX / UI), crearea de logo-uri, site-uri pentru prezentare, magazine online si nu in ultimul rand ne ocupam de tot ce tine de partea de SEO.
       </div>
     </div>
   </div>
@@ -94,12 +95,12 @@
   </div>
 
   <!-- presentation-website-offer section -->
-  <div class="presentation-website-offer-section small-content">
+  <div class="presentation-website-offer-section small-content" id="site-web-prezentare">
     <div class="section-title">
       Ce oferim pentru un site web de prezentare?
     </div>
     <div class="offer-cards">
-      <div class="offer-card" *ngFor="let presentationWebsiteOffer of presentationWebsiteOffers">
+      <div class="offer-card hvr-grow" *ngFor="let presentationWebsiteOffer of presentationWebsiteOffers">
         <div class="title">
           {{ presentationWebsiteOffer.title }}
         </div>
@@ -112,12 +113,12 @@
   </div>
 
   <!-- online-shop-offer section -->
-  <div class="online-shop-offer-section small-content">
+  <div class="online-shop-offer-section small-content" id="magazin-online">
     <div class="section-title">
       Ce oferim pentru un magazin online?
     </div>
     <div class="offer-cards">
-      <div class="offer-card" *ngFor="let onlineShopOffer of onlineShopOffers">
+      <div class="offer-card hvr-grow" *ngFor="let onlineShopOffer of onlineShopOffers">
         <div class="title">
           {{ onlineShopOffer.title }}
         </div>
@@ -135,7 +136,7 @@
     Servicii extra
   </div>
   <div class="offer-cards">
-    <div class="offer-card" *ngFor="let extraServicesOffer of extraServicesOffers">
+    <div class="offer-card hvr-grow" *ngFor="let extraServicesOffer of extraServicesOffers">
       <div class="title">
         {{ extraServicesOffer.title }}
       </div>
@@ -165,7 +166,7 @@
   </div>
 
    <!-- testimonials section -->
-   <div class="testimonials-section small-content">
+   <div class="testimonials-section small-content" id="review-uri">
     <div class="section-title">
       Ce parere au clientii nostri despre noi?
     </div>
@@ -220,7 +221,7 @@
   <div class="section-title">
     Etapele unui proiect
   </div>
-  <div class="project-step-card" *ngFor="let projectStep of projectSteps">
+  <div class="project-step-card hvr-curl-top-right" *ngFor="let projectStep of projectSteps">
     <div class="index-title">
       <div class="index">
         {{ projectStep.index }}

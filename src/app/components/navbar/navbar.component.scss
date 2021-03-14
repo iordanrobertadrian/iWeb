@@ -16,6 +16,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    img {
+        cursor: pointer;
+    }
     .menu {
         display: flex;
         flex-direction: row;
