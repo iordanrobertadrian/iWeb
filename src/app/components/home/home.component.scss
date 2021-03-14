@@ -54,12 +54,14 @@
     }
   }
   .testimonials-section {
-    padding: 0 !important;
-    .title {
+    padding: 0px!important;
+    .section-title {
+      padding: 50px!important;
     }
     .testimonials-carousel {
       display: block !important;
       .carousel-inner {
+        box-shadow: unset!important;
         .carousel-item {
           .carousel-content {
             .testimonial-description {
