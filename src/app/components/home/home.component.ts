@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { AngularFirestore } from "@angular/fire/firestore";
 import { Observable } from 'rxjs';
 interface Review {
@@ -28,7 +28,7 @@ export interface Project {
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, AfterViewInit {
   reviews: Observable<Review[]>
 
   onlineShopOffers: OfferCard[] = [
@@ -270,5 +270,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.reviews = this.afs.collection<Review>('Reviews').valueChanges();
+  }
+  ngAfterViewInit() {
+    console.log('done')
   }
 }

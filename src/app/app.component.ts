@@ -11,7 +11,7 @@ export class AppComponent implements OnInit{
     setTimeout(
       () => {
         document.getElementById("overlay").style.display = "block";
-      }, 5000
+      }, 10000
     )
   }
   off() {

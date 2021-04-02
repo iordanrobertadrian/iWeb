@@ -1,13 +1,40 @@
 <app-navbar></app-navbar>
 <router-outlet></router-outlet>
 <div class="footer">
-    © 2018- 2021 <span class="iweb">iWeb</span>. Toate drepturile rezervate.
+  © 2018- 2021 <span class="iweb">iWeb</span>. Toate drepturile rezervate.
 </div>
 <!-- contact nav right -->
 <div class="right-nav">
-    <a href="https://www.facebook.com/Solution-i-Web-Creare-Site-uri-Web-si-Magazine-Online-100853695429432" target="_blank"><img src="../../../assets/social-media-icons/facebook.svg" alt="Facebook"></a>
-    <a href="mailto:iradev.design@gmail.com" target="_blank"><img src="../../../assets/social-media-icons/gmail.svg" alt="Gmail"></a>
-    <a href="https://www.instagram.com/iwebsolution/" target="_blank"><img src="../../../assets/social-media-icons/instagram.svg" alt="Instagram"></a>
-    <a href="https://wa.me/+40739663005" target="_blank"><img src="../../../assets/social-media-icons/whatsapp.svg" alt="Whatsapp"></a>
+  <a
+    href="https://www.facebook.com/Solution-i-Web-Creare-Site-uri-Web-si-Magazine-Online-100853695429432"
+    target="_blank"
+    ><img src="../../../assets/social-media-icons/facebook.svg" alt="Facebook"
+  /></a>
+  <a href="mailto:iradev.design@gmail.com" target="_blank"
+    ><img src="../../../assets/social-media-icons/gmail.svg" alt="Gmail"
+  /></a>
+  <a href="https://www.instagram.com/iwebsolution/" target="_blank"
+    ><img
+      src="../../../assets/social-media-icons/instagram.svg"
+      alt="Instagram"
+  /></a>
+  <a href="https://wa.me/+40739663005" target="_blank"
+    ><img src="../../../assets/social-media-icons/whatsapp.svg" alt="Whatsapp"
+  /></a>
 </div>
-<div class="overlay" id="overlay" (click)="off()"></div>
+<div class="overlay" id="overlay">
+    <div class="title">
+        NU RATA OFERTA DE 25% LA CREAREA UNUI MAGAZIN ONLINE!
+    </div>
+    <div class="center-side">
+        <div class="left-side">
+            <img src="../assets/overlay/final-sale.svg">
+            <div class="get-offer hvr-grow" routerLink="/contact" (click)="off()">Profita acum</div>
+        </div>
+        <div class="right-side">
+            <img src="../assets/overlay/magazin-online.svg" alt="">
+        </div>
+    </div>
+  <span class="material-icons close hvr-grow" (click)="off()"> clear </span>
+  <div class="iweb-banner"><img src="../assets/overlay/iweb-logo.svg"></div>
+</div>
