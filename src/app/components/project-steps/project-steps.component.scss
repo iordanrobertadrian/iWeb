@@ -1,0 +1,85 @@
+@media only screen and (max-width: 650px) {
+  .small-content {
+    padding: 50px !important;
+  }
+  .section-title {
+    font-size: 28px !important;
+  }
+  .section-subtitle {
+    font-size: 20px !important;
+  }
+  .section-description {
+    font-size: 15px !important;
+  }
+  .project-steps-section {
+    .project-step-card {
+      .index-title {
+        flex-direction: column !important;
+        .index {
+          margin-right: 0px !important;
+          margin-bottom: 25px !important;
+        }
+        .title {
+          font-size: 20px !important;
+          text-align: center !important;
+        }
+      }
+      .description {
+        font-size: 14px !important;
+        text-align: center !important;
+      }
+    }
+  }
+}
+//small-content
+.small-content {
+  padding: 100px 50px;
+}
+//section-title
+.section-title {
+  font-family: "Black Ops One", cursive;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+//section-subtitle
+.section-subtitle {
+  font-family: "Black Ops One", cursive;
+  font-size: 28px;
+  text-align: center;
+}
+//section-description
+.section-description {
+  font-family: "Black Ops One", cursive;
+  font-size: 20px;
+  text-align: center;
+}
+// project steps section
+.project-steps-section {
+  .project-step-card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 50px;
+    margin-bottom: 100px;
+    .index-title {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+      .index {
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        padding: 25px;
+        background: black;
+        color: #60db57;
+        font-size: 25px;
+        font-family: "Black Ops One", cursive;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 25px;
+      }
+    }
+  }
+}

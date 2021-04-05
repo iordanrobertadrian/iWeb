@@ -1,0 +1,20 @@
+<!-- project steps -->
+<div class="project-steps-section small-content">
+  <div class="section-title">Etapele unui proiect</div>
+  <div
+    class="project-step-card hvr-curl-top-right"
+    *ngFor="let projectStep of projectSteps"
+  >
+    <div class="index-title">
+      <div class="index">
+        {{ projectStep.index }}
+      </div>
+      <div class="section-subtitle">
+        {{ projectStep.title }}
+      </div>
+    </div>
+    <div class="section-description">
+      {{ projectStep.description }}
+    </div>
+  </div>
+</div>

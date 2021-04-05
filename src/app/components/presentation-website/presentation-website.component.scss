@@ -1,0 +1,76 @@
+@media only screen and (max-width: 650px) {
+  .small-content {
+    padding: 50px !important;
+  }
+  .section-title {
+    font-size: 28px !important;
+  }
+  .section-subtitle {
+    font-size: 20px !important;
+  }
+  .section-description {
+    font-size: 15px !important;
+  }
+  .presentation-website-offer-section {
+    margin: 50px 0px !important;
+    .offer-cards {
+      .offer-card {
+        margin: 0 0 50px 0!important;
+      }
+    }
+  }
+}
+
+//small-content
+.small-content {
+  padding: 100px 50px;
+}
+//section-title
+.section-title {
+  font-family: "Black Ops One", cursive;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+//section-subtitle
+.section-subtitle {
+  font-family: "Black Ops One", cursive;
+  font-size: 28px;
+  text-align: center;
+}
+//section-description
+.section-description {
+  font-family: "Black Ops One", cursive;
+  font-size: 20px;
+  text-align: center;
+}
+//presentation-website-offer-section
+.presentation-website-offer-section {
+  .offer-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .offer-card {
+      margin: 50px;
+      padding: 25px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 335px;
+      .title {
+        font-family: "Black Ops One", cursive;
+        margin-bottom: 25px;
+        text-align: center;
+      }
+      .description {
+        font-family: "Black Ops One", cursive;
+        margin-top: 25px;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,87 +1,87 @@
 @media only screen and (max-width: 650px) {
-    .section-title {
-        font-size: 28px!important;
-        margin: 50px!important;
+  .section-title {
+    font-size: 28px !important;
+    margin: 50px !important;
+  }
+  .section-subtitle {
+    font-size: 20px !important;
+  }
+  .section-description {
+    font-size: 15px !important;
+  }
+  .projects-container {
+    padding: 50px !important;
+    .project-card {
+      margin-bottom: 100px !important;
+      padding: 100px 50px 50px 50px !important;
+      img {
+        width: 100% !important;
       }
-      .section-subtitle {
-        font-size: 20px!important;
-      }
-      .section-description {
-        font-size: 15px!important;
-      }
-    .projects-container {
-        padding: 50px!important;
-        .project-card {
-            margin-bottom: 100px!important;
-            padding: 100px 50px 50px 50px!important;
-            img {
-                width: 100%!important;
-            }
-        }
     }
+  }
 }
 //small-content
 .small-content {
-    padding: 100px 50px;
+  padding: 100px 50px;
 }
 //section-title
 .section-title {
-    font-family: "Black Ops One", cursive;
-    font-size: 36px;
-    text-align: center;
-    margin: 100px;
-    color: black;
-  }
-  //section-subtitle
-  .section-subtitle {
-    font-family: "Black Ops One", cursive;
-    font-size: 28px;
-    text-align: center;
-    margin-bottom: 50px;
-    color: black;
-  }
-  //section-description
-  .section-description {
-    font-family: "Contrail One", cursive;
-    font-size: 20px;
-    text-align: center;
-    margin-top: 50px;
-    color: black;
-  }
+  font-family: "Black Ops One", cursive;
+  font-size: 36px;
+  text-align: center;
+  margin: 100px;
+  color: black;
+}
+//section-subtitle
+.section-subtitle {
+  font-family: "Black Ops One", cursive;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 50px;
+  color: black;
+}
+//section-description
+.section-description {
+  font-family: "Contrail One", cursive;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 50px;
+  color: black;
+}
 .presentation-badge {
-    background-color: #e78267;
+  background-color: #e78267;
 }
 .online-shop-badge {
-    background-color: #60DB57;
+  background-color: #60db57;
 }
 .projects-container {
-    width: 100%;
-    .project-card {
-        box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
-        padding: 50px;
-        margin-bottom: 200px;
-        position: relative;
-        a {
-            text-decoration: none;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        img {
-            width: 50%;
-        }
-        .badge {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 42px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-size: 20px;
-            font-family: "Contrail One", cursive;
-        }
+  width: 100%;
+  .project-card {
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    padding: 50px;
+    margin-bottom: 200px;
+    position: relative;
+    a {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
+    img {
+      width: 50%;
+    }
+    .badge {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 42px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 20px;
+      font-family: "Contrail One", cursive;
+    }
+  }
 }
