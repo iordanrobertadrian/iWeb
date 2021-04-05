@@ -1,19 +1,24 @@
-<div class="section-title">
-    Cele mai recente proiecte
-</div>
+<div class="section-title">Cele mai recente proiecte</div>
 <div class="projects-container small-content">
-    <div class="project-card hvr-curl-top-right" *ngFor="let project of projects">
-        <a [href]="project.linkURL">
-            <div class="section-subtitle">
-                {{ project.title }}
-            </div>
-            <img [src]="project.imagePath">
-            <div class="section-description">
-                {{ project.description }}
-            </div>
-            <div class="badge" [ngClass]="project.badge === 'Magazin Online' ? 'online-shop-badge' : 'presentation-badge'">
-                {{ project.badge }}
-            </div>
-        </a>
-    </div>
+  <div class="project-card hvr-curl-top-right" *ngFor="let project of projects">
+    <a [href]="project.linkURL">
+      <div class="section-subtitle">
+        {{ project.title }}
+      </div>
+      <img [src]="project.imagePath" />
+      <div class="section-description">
+        {{ project.description }}
+      </div>
+      <div
+        class="badge"
+        [ngClass]="
+          project.badge === 'Magazin Online'
+            ? 'online-shop-badge'
+            : 'presentation-badge'
+        "
+      >
+        {{ project.badge }}
+      </div>
+    </a>
+  </div>
 </div>

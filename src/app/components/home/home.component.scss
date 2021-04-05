@@ -1,21 +1,21 @@
 @media only screen and (max-width: 1050px) {
   .project-card {
-    width: 40%!important;
+    width: 40% !important;
   }
 }
 @media only screen and (max-width: 650px) {
   .small-content {
-    padding: 50px!important;
+    padding: 50px !important;
   }
-.section-title {
-  font-size: 28px!important;
-}
-.section-subtitle {
-  font-size: 20px!important;
-}
-.section-description {
-  font-size: 15px!important;
-}
+  .section-title {
+    font-size: 28px !important;
+  }
+  .section-subtitle {
+    font-size: 20px !important;
+  }
+  .section-description {
+    font-size: 15px !important;
+  }
   .carousel {
     display: none !important;
   }
@@ -25,43 +25,31 @@
     margin-top: 80px;
   }
   .what-we-offer-section {
-    .online-shop-section, .presentation-website-section, .logo-section, .ux-ui-section, .unique-section {
-      flex-direction: column-reverse!important;
+    .online-shop-section,
+    .presentation-website-section,
+    .logo-section,
+    .ux-ui-section,
+    .unique-section {
+      flex-direction: column-reverse !important;
       margin-bottom: 100px;
-      img, .section-subtitle {
-        width: 100%!important;
+      img,
+      .section-subtitle {
+        width: 100% !important;
       }
       .section-subtitle {
-        margin-bottom: 50px!important;
+        margin-bottom: 50px !important;
       }
-    }
-  }
-  .about-us-section {
-    flex-direction: column-reverse !important;
-    .description {
-      width: 100% !important;
-      .section-title {
-        margin-bottom: 100px!important;
-      }
-      .section-description {
-        margin-bottom: 50px!important;
-        font-size: 20px!important;
-      }
-    }
-    .banner {
-      margin-right: unset !important;
-      width: 100%!important;
     }
   }
   .testimonials-section {
-    padding: 0px!important;
+    padding: 0px !important;
     .section-title {
-      padding: 50px!important;
+      padding: 50px !important;
     }
     .testimonials-carousel {
       display: block !important;
       .carousel-inner {
-        box-shadow: unset!important;
+        box-shadow: unset !important;
         .carousel-item {
           .carousel-content {
             .testimonial-description {
@@ -79,49 +67,13 @@
       }
     }
   }
-  .online-shop-offer-section,
-  .presentation-website-offer-section,
-  .extra-services-offer-section {
-    .section-title {
-    }
-    .offer-cards {
-      .offer-card {
-        margin: 50px 0px !important;
-      }
-    }
-  }
-  .project-steps-section {
-    .title {
-    }
-    .project-step-card {
-      .index-title {
-        flex-direction: column !important;
-        .index {
-          margin-right: 0px !important;
-          margin-bottom: 25px !important;
-        }
-        .title {
-          font-size: 20px !important;
-          text-align: center !important;
-        }
-      }
-      .description {
-        font-size: 14px !important;
-        text-align: center !important;
-      }
-    }
-  }
   .projects-section {
     .projects {
       .project-card {
-        padding: 25px!important;
-        width: 100%!important;
-        margin: 0px 0px 50px 0px!important;
+        padding: 25px !important;
+        width: 100% !important;
+        margin: 0px 0px 50px 0px !important;
         cursor: pointer;
-        a {
-          .section-subtitle {
-          }
-        }
       }
     }
   }
@@ -171,9 +123,11 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  .section-title {
-  }
-  .online-shop-section, .presentation-website-section, .logo-section, .ux-ui-section, .unique-section {
+  .online-shop-section,
+  .presentation-website-section,
+  .logo-section,
+  .ux-ui-section,
+  .unique-section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -185,46 +139,13 @@
       width: 50%;
     }
   }
-  .presentation-website-section {
-    flex-direction: row-reverse;
-  }
+  .presentation-website-section,
   .ux-ui-section {
     flex-direction: row-reverse;
   }
 }
-// About us section
-.about-us-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  .banner {
-    width: 50%;
-    margin-right: 100px;
-  }
-  .description {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .section-title {
-      margin-bottom: 25px;
-    }
-    .section-description {
-    }
-  }
-}
-
 //Testimonials section
 .testimonials-section {
-  .title {
-    font-family: "Black Ops One", cursive;
-    text-align: center;
-    font-size: 34px;
-    margin-bottom: 50px;
-  }
   .client-testimonial-carousel {
     .carousel-inner {
       box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
@@ -243,8 +164,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            .text {
-            }
           }
           .client-container {
             .client-image {
@@ -278,80 +197,6 @@
     }
   }
 }
-
-//online-shop-offer-section && presentation-website-offer-section && extra-services-offer-section
-.online-shop-offer-section,
-.presentation-website-offer-section,
-.extra-services-offer-section {
-  .section-title {
-  }
-  .offer-cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    .offer-card {
-      margin: 50px;
-      padding: 25px;
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 335px;
-      .title {
-        font-family: "Black Ops One", cursive;
-        margin-bottom: 25px;
-        text-align: center;
-      }
-      img {
-      }
-      .description {
-        font-family: "Black Ops One", cursive;
-        margin-top: 25px;
-        font-size: 14px;
-        text-align: center;
-      }
-    }
-  }
-}
-
-// project steps section
-.project-steps-section {
-  .section-title {
-  }
-  .project-step-card {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 50px;
-    margin-bottom: 100px;
-    .index-title {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 50px;
-      .index {
-        border-radius: 50%;
-        width: 36px;
-        height: 36px;
-        padding: 25px;
-        background: black;
-        color: #60db57;
-        font-size: 25px;
-        font-family: "Black Ops One", cursive;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 25px;
-      }
-      .section-subtitle {
-      }
-    }
-    .section-description {
-    }
-  }
-}
-
 //projects-section
 .projects-section {
   width: 100%;
@@ -375,23 +220,6 @@
           margin-bottom: 25px;
         }
       }
-    }
-  }
-}
-//facebook-section
-.facebook-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  .section-title {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    img {
-      width: 50px;
-      margin-right: 10px;
     }
   }
 }

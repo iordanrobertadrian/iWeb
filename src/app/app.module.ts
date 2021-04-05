@@ -16,6 +16,11 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { OnlineShopComponent } from './components/online-shop/online-shop.component';
+import { PresentationWebsiteComponent } from './components/presentation-website/presentation-website.component';
+import { ExtraServicesComponent } from './components/extra-services/extra-services.component';
+import { ProjectStepsComponent } from './components/project-steps/project-steps.component';
+import { NewsComponent } from './components/news/news.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +29,12 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     HomeComponent,
     ContactUsComponent,
     ProjectsComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    OnlineShopComponent,
+    PresentationWebsiteComponent,
+    ExtraServicesComponent,
+    ProjectStepsComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,

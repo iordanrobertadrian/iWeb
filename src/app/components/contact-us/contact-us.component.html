@@ -1,23 +1,49 @@
 <div class="title">Cere oferta</div>
 <div class="contact-us-form">
-    <div class="contact-form">
-        <div class="input-group">
-            <input value="" class="form-control" type="text" required="required" placeholder="Nume" [(ngModel)]="name">
-            <label class="input-label">Nume</label>
-        </div>
-        <div class="input-group">
-            <input value="" class="form-control" type="text" required="required" placeholder="Email" [(ngModel)]="email">
-            <label class="input-label">Email</label>
-        </div>
-        <div class="input-group">
-            <input value="" class="form-control" type="text" required="required" placeholder="Phone" [(ngModel)]="phone">
-            <label class="input-label">Telefon</label>
-        </div>
-        <div class="input-group textarea">
-            <textarea rows="4" cols="50" placeholder="Descriere" [(ngModel)]="description"></textarea>
-            <label class="textarea-label">Descriere</label>
-        </div>
-        <div class="submit-button" (click)="submit()">Trimite</div>
+  <div class="contact-form">
+    <div class="input-group">
+      <input
+        value=""
+        class="form-control"
+        type="text"
+        required="required"
+        placeholder="Nume"
+        [(ngModel)]="name"
+      />
+      <label class="input-label">Nume</label>
     </div>
-    <img src="../../../assets/contact/contact.svg">
+    <div class="input-group">
+      <input
+        value=""
+        class="form-control"
+        type="text"
+        required="required"
+        placeholder="Email"
+        [(ngModel)]="email"
+      />
+      <label class="input-label">Email</label>
+    </div>
+    <div class="input-group">
+      <input
+        value=""
+        class="form-control"
+        type="text"
+        required="required"
+        placeholder="Phone"
+        [(ngModel)]="phone"
+      />
+      <label class="input-label">Telefon</label>
+    </div>
+    <div class="input-group textarea">
+      <textarea
+        rows="4"
+        cols="50"
+        placeholder="Descriere"
+        [(ngModel)]="description"
+      ></textarea>
+      <label class="textarea-label">Descriere</label>
+    </div>
+    <div class="submit-button" (click)="submit()">Trimite</div>
+  </div>
+  <img src="../../../assets/contact/contact.svg" />
 </div>

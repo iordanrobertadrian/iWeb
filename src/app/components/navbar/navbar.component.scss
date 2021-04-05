@@ -1,73 +1,74 @@
 @media only screen and (max-width: 850px) {
-    .navbar-container-desktop {
-        display:none!important;
-    }
-    .navbar-container-mobile {
-        display: flex!important;
-    }
+  .navbar-container-desktop {
+    display: none !important;
   }
-  *:focus {
-    outline: none;
+  .navbar-container-mobile {
+    display: flex !important;
   }
+}
+*:focus {
+  outline: none;
+}
 .navbar-container-desktop {
-    padding: 10px 50px;
-    background-color: black;
+  padding: 10px 50px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    cursor: pointer;
+  }
+  .menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    img {
-        cursor: pointer;
+    .button {
+      color: white;
+      font-family: "Black Ops One", cursive;
+      margin-left: 50px;
+      cursor: pointer;
+      font-size: 13px;
     }
-    .menu {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        .button {
-            color: white;
-            font-family: 'Black Ops One', cursive;
-            margin-left: 50px;
-            cursor:pointer;
-        }
-    }
+  }
 }
 .navbar-container-mobile {
-    display: none;
-    position: relative;
-    background-color: black;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 10vh;
-    mat-icon {
-        color: #ffffff;
-        position: absolute;
-        left: 25px;
-        font-size: 30px;
-    }
+  display: none;
+  position: relative;
+  background-color: black;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  mat-icon {
+    color: #ffffff;
+    position: absolute;
+    left: 25px;
+    font-size: 30px;
+  }
 }
 .mobile-menu {
-    height: 90vh;
-    background-color: black;
+  height: 90vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-top: 2px solid #60db57;
+  .mobile-button {
+    color: white;
+    font-family: "Black Ops One", cursive;
+    font-size: 15px;
+    cursor: pointer;
+    height: 10vh;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    border-top: 2px solid #60DB57;
-    .mobile-button {
-        color: white;
-        font-family: 'Black Ops One', cursive;
-        font-size: 15px;
-        cursor: pointer;
-        height: 10vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    justify-content: center;
+    align-items: center;
+  }
 }
 .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 99;
-  }
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}

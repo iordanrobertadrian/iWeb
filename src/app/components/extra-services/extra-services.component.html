@@ -1,0 +1,18 @@
+<!-- extra services -->
+<div class="extra-services-offer-section small-content">
+  <div class="section-title">Servicii extra</div>
+  <div class="offer-cards">
+    <div
+      class="offer-card hvr-grow"
+      *ngFor="let extraServicesOffer of extraServicesOffers"
+    >
+      <div class="title">
+        {{ extraServicesOffer.title }}
+      </div>
+      <img [src]="extraServicesOffer.imagePath" width="100px" />
+      <div class="description">
+        {{ extraServicesOffer.description }}
+      </div>
+    </div>
+  </div>
+</div>

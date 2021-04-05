@@ -1,25 +1,94 @@
 <div class="navbar-container-desktop" id="navbar">
-    <img src="../../../assets/logo/iWeb-transparent.png" alt="iWeb" routerLink="/acasa">
-    <div class="menu">
-        <div class="button hvr-underline-from-left" routerLink="/acasa">Acasa</div>
-        <div class="button hvr-underline-from-left" routerLink="/proiecte">Proiecte</div>
-        <div class="button hvr-underline-from-left" routerLink="/acasa" [fragment]="'magazin-online'">Magazin Online</div>
-        <div class="button hvr-underline-from-left" routerLink="/acasa" [fragment]="'site-web-prezentare'">Site Web Prezentare</div>
-        <div class="button hvr-underline-from-left" routerLink="/acasa" [fragment]="'review-uri'">Review-uri</div>
-        <div class="button hvr-underline-from-left" routerLink="/despre-noi">Despre noi</div>
-        <div class="button hvr-underline-from-left" routerLink="/contact">Contact</div>
+  <img
+    src="../../../assets/logo/iWeb-transparent.png"
+    alt="iWeb"
+    routerLink="/acasa"
+  />
+  <div class="menu">
+    <div class="button hvr-underline-from-left" routerLink="/acasa">Acasa</div>
+    <div class="button hvr-underline-from-left" routerLink="/noutati">
+      Noutati
     </div>
+    <div class="button hvr-underline-from-left" routerLink="/proiecte">
+      Proiecte
+    </div>
+    <div class="button hvr-underline-from-left" routerLink="/magazin-online">
+      Magazin Online
+    </div>
+    <div
+      class="button hvr-underline-from-left"
+      routerLink="/site-web-prezentare"
+    >
+      Site Web Prezentare
+    </div>
+    <div class="button hvr-underline-from-left" routerLink="/servicii-extra">
+      Servicii Extra
+    </div>
+    <div
+      class="button hvr-underline-from-left"
+      routerLink="/etapele-unui-proiect"
+    >
+      Etapele Unui Proiect
+    </div>
+    <div class="button hvr-underline-from-left" routerLink="/despre-noi">
+      Despre Noi
+    </div>
+    <div class="button hvr-underline-from-left" routerLink="/contact">
+      Cere Oferta
+    </div>
+  </div>
 </div>
 <div class="navbar-container-mobile">
-    <mat-icon aria-hidden="false" aria-label="Example home icon" (click)="toggleMenu()">menu</mat-icon>
-    <img src="../../../assets/logo/iWeb-transparent.png" alt="iWeb">
+  <mat-icon
+    aria-hidden="false"
+    aria-label="Example home icon"
+    (click)="toggleMenu()"
+    >menu</mat-icon
+  >
+  <img src="../../../assets/logo/iWeb-transparent.png" alt="iWeb" />
 </div>
 <div class="mobile-menu" *ngIf="showMobileMenu">
-    <div class="mobile-button" routerLink="/acasa" (click)="toggleMenu()">Acasa</div>
-    <div class="mobile-button" routerLink="/proiecte" (click)="toggleMenu()">Proiecte</div>
-    <div class="mobile-button" routerLink="/acasa" [fragment]="'magazin-online'" (click)="toggleMenu()">Magazin Online</div>
-    <div class="mobile-button" routerLink="/acasa" [fragment]="'site-web-prezentare'" (click)="toggleMenu()">Site Web Prezentare</div>
-    <div class="mobile-button" routerLink="/acasa" [fragment]="'review-uri'" (click)="toggleMenu()">Review-uri</div>
-    <div class="mobile-button" routerLink="/despre-noi" (click)="toggleMenu()">Despre noi</div>
-    <div class="mobile-button" routerLink="/contact" (click)="toggleMenu()">Contact</div>
+  <div class="mobile-button" routerLink="/acasa" (click)="toggleMenu()">
+    Acasa
+  </div>
+  <div class="mobile-button" routerLink="/noutati" (click)="toggleMenu()">
+    Noutati
+  </div>
+  <div class="mobile-button" routerLink="/proiecte" (click)="toggleMenu()">
+    Proiecte
+  </div>
+  <div
+    class="mobile-button"
+    routerLink="/magazin-online"
+    (click)="toggleMenu()"
+  >
+    Magazin Online
+  </div>
+  <div
+    class="mobile-button"
+    routerLink="/site-web-prezentare"
+    (click)="toggleMenu()"
+  >
+    Site Web Prezentare
+  </div>
+  <div
+    class="mobile-button"
+    routerLink="/servicii-extra"
+    (click)="toggleMenu()"
+  >
+    Servicii Extra
+  </div>
+  <div
+  class="mobile-button"
+  routerLink="/etapele-unui-proiect"
+  (click)="toggleMenu()"
+>
+  Etapele Unui Proiect
+</div>
+  <div class="mobile-button" routerLink="/despre-noi" (click)="toggleMenu()">
+    Despre Noi
+  </div>
+  <div class="mobile-button" routerLink="/contact" (click)="toggleMenu()">
+    Cere Oferta
+  </div>
 </div>

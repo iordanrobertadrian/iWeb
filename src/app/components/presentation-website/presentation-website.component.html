@@ -1,0 +1,21 @@
+<!-- presentation-website-offer section -->
+<div
+  class="presentation-website-offer-section small-content"
+  id="site-web-prezentare"
+>
+  <div class="section-title">Ce oferim pentru un site web de prezentare?</div>
+  <div class="offer-cards">
+    <div
+      class="offer-card hvr-grow"
+      *ngFor="let presentationWebsiteOffer of presentationWebsiteOffers"
+    >
+      <div class="title">
+        {{ presentationWebsiteOffer.title }}
+      </div>
+      <img [src]="presentationWebsiteOffer.imagePath" width="100px" />
+      <div class="description">
+        {{ presentationWebsiteOffer.description }}
+      </div>
+    </div>
+  </div>
+</div>
