@@ -14,8 +14,10 @@
   .extra-services-offer-section {
     margin: 50px 0px !important;
     .offer-cards {
+      flex-direction: column!important;;
       .offer-card {
         margin: 0 0 50px 0!important;
+        width: 100%!important;
       }
     }
   }
