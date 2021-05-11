@@ -13,6 +13,7 @@ export class ContactUsComponent implements OnInit {
   email: string;
   phone: string;
   description: string;
+  promoCode: string;
   constructor(private afs: AngularFirestore, private _snackBar: MatSnackBar) {}
 
   ngOnInit(): void {}
@@ -23,6 +24,7 @@ export class ContactUsComponent implements OnInit {
       email: this.email,
       phone: this.phone,
       description: this.description,
+      promoCode: this.promoCode,
     };
     return this.afs
       .collection('CereriOferta')
@@ -37,6 +39,7 @@ export class ContactUsComponent implements OnInit {
         this.email = '';
         this.phone = '';
         this.description = '';
+        this.promoCode = '';
       });
   }
 }

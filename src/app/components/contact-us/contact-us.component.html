@@ -43,6 +43,17 @@
       ></textarea>
       <label class="textarea-label">Descriere</label>
     </div>
+    <div class="input-group">
+      <input
+        value=""
+        class="form-control"
+        type="text"
+        required="required"
+        placeholder="Cod Promotional"
+        [(ngModel)]="promoCode"
+      />
+      <label class="input-label">Cod Promotional</label>
+    </div>
     <div class="submit-button" (click)="submit()">Trimite</div>
   </div>
   <img src="../../../assets/contact/contact.svg" />
