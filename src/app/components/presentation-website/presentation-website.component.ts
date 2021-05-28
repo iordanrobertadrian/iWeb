@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
+import { CanonicalService } from 'src/app/shared/canonical.service';
 interface OfferCard {
   title: string;
   description: string;
@@ -10,6 +12,8 @@ interface OfferCard {
   styleUrls: ['./presentation-website.component.scss'],
 })
 export class PresentationWebsiteComponent implements OnInit {
+  title =
+    'Site Prezentare | Creare Magazin Online | Creare Site Prezentare | iWeb-Solution';
   presentationWebsiteOffers: OfferCard[] = [
     {
       title: 'DESGIN WEB RESPONSIVE',
@@ -85,7 +89,31 @@ export class PresentationWebsiteComponent implements OnInit {
       imagePath: '../../../assets/flat-icons/place.svg',
     },
   ];
-  constructor() {}
+  constructor(
+    private metaTagService: Meta,
+    private titleService: Title,
+    private canonicalService: CanonicalService
+  ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.metaTagService.addTags([
+      {
+        name: 'keywords',
+        content:
+          'Creare site,Creare magazin online,Creare site web,Creare site web prezentare,Creare site prezentare,Site,Site web',
+      },
+      { name: 'robots', content: 'index, follow' },
+      { name: 'author', content: 'iWeb-Solution' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'date', content: '2018-08-01', scheme: 'YYYY-MM-DD' },
+      {
+        name: 'description',
+        content:
+          'Crearea de magazine online si site-uri web pentru prezentarea afacerii dumneavoastra.',
+      },
+      { charset: 'UTF-8' },
+    ]);
+    this.titleService.setTitle(this.title);
+    this.canonicalService.setCanonicalURL();
+  }
 }

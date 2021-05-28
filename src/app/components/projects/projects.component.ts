@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
+import { CanonicalService } from 'src/app/shared/canonical.service';
 import { Project } from '../home/home.component';
 
 @Component({
@@ -7,6 +9,8 @@ import { Project } from '../home/home.component';
   styleUrls: ['./projects.component.scss'],
 })
 export class ProjectsComponent implements OnInit {
+  title =
+    'Proiecte | Creare Magazin Online | Creare Site Prezentare | iWeb-Solution';
   projects: Project[] = [
     {
       title: 'ONIX SHOP',
@@ -49,7 +53,31 @@ export class ProjectsComponent implements OnInit {
       badge: 'Magazin Online',
     },
   ];
-  constructor() {}
+  constructor(
+    private metaTagService: Meta,
+    private titleService: Title,
+    private canonicalService: CanonicalService
+  ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.metaTagService.addTags([
+      {
+        name: 'keywords',
+        content:
+          'Creare site,Creare magazin online,Creare site web,Creare site web prezentare,Creare site prezentare,Site,Site web',
+      },
+      { name: 'robots', content: 'index, follow' },
+      { name: 'author', content: 'iWeb-Solution' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'date', content: '2018-08-01', scheme: 'YYYY-MM-DD' },
+      {
+        name: 'description',
+        content:
+          'Proiecte ale magazinelor online si a site-urilor web realizate de compania noastra iWeb-Solution.',
+      },
+      { charset: 'UTF-8' },
+    ]);
+    this.titleService.setTitle(this.title);
+    this.canonicalService.setCanonicalURL();
+  }
 }
