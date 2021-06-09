@@ -58,27 +58,27 @@ export class HomeComponent implements OnInit {
   projects: Project[] = [
     {
       title: 'ONIX SHOP',
-      imagePath: '../../../assets/projects/onix-shop.svg',
+      imagePath: '../../../assets/projects/onix-shop-creare-magazin-online-creare-site-web-prezentare-iweb-solution.svg',
       linkURL: 'https://www.onix-shop.com',
     },
     {
       title: 'AMY VILLAGE',
-      imagePath: '../../../assets/projects/amy-village.svg',
+      imagePath: '../../../assets/projects/amy-village-creare-site-web-prezentare-creare-magazin-online-iweb-solution.svg',
       linkURL: 'https://www.amy-village.ro',
     },
     {
       title: 'BEST MOMENTS',
-      imagePath: '../../../assets/projects/best-moments.svg',
+      imagePath: '../../../assets/projects/best-moments-creare-magazin-online-creare-site-web-prezentare-iweb-solution.svg',
       linkURL: 'https://www.bestmoments-shop.com',
     },
     {
       title: 'YURI SHOP',
-      imagePath: '../../../assets/projects/yuri-shop.svg',
+      imagePath: '../../../assets/projects/yuri-shop-creare-magazin-online-creare-site-web-prezentare-iweb-solution.svg',
       linkURL: 'https://www.yurishop.ro',
     },
     {
       title: 'ONLINE GAME SHOP',
-      imagePath: '../../../assets/projects/online-shop.svg',
+      imagePath: '../../../assets/projects/online-shop-creare-magazin-online-creare-site-web-prezentare-iweb-solution.svg',
       linkURL: 'https://onlinegameshop-1603f.web.app',
     },
   ];

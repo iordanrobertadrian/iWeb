@@ -18,75 +18,75 @@ export class PresentationWebsiteComponent implements OnInit {
     {
       title: 'DESGIN WEB RESPONSIVE',
       description: 'Compatibilitate cu orice tip de dispozitiv.',
-      imagePath: '../../../assets/flat-icons/responsive-website.svg',
+      imagePath: '../../../assets/flat-icons/responsive-website-logo-iweb-solution-creare-magazin-online-creare-site-web-prezentare.svg',
     },
     {
       title: 'PANOU DE ADMINISTRARE',
       description:
         'Poti vizualiza, modifica si adauga orice tine de site-ul tau.',
-      imagePath: '../../../assets/flat-icons/admin.svg',
+      imagePath: '../../../assets/flat-icons/admin-logo-iweb-solution-creare-magazin-online-creare-site-web-prezentare.svg',
     },
     {
       title: 'GALERIE FOTO/VIDEO',
       description:
         'Integrare galerie foto/video pe orice pagina a site-ului tau de prezentare.',
-      imagePath: '../../../assets/flat-icons/gallery.svg',
+      imagePath: '../../../assets/flat-icons/gallery-logo-iweb-solution-creare-magazin-online-creare-site-web-prezentare.svg',
     },
     {
       title: 'SLIDESHOW',
       description:
         'Prezentarea produselor pe prima pagina a site-ului tau de prezentare.',
-      imagePath: '../../../assets/flat-icons/slideshow.svg',
+      imagePath: '../../../assets/flat-icons/slideshow-logo-iweb-solution-creare-magazin-online-creare-site-web-prezentare.svg',
     },
     {
       title: 'OPTIMIZARE SEO',
       description:
         'De la structura site-ului la setarea meta tag-urilor pe fiecare pagina a site-ului tau de prezentare.',
-      imagePath: '../../../assets/flat-icons/seo.svg',
+      imagePath: '../../../assets/flat-icons/seo-logo-iweb-solution-creare-magazin-online-creare-site-web-prezentare.svg',
     },
     {
       title: 'FORUMAR DE CONTACT',
       description:
         'Lasati clientii sa comunice cu tine intr-un mod rapid si eficient.',
-      imagePath: '../../../assets/flat-icons/business-card.svg',
+      imagePath: '../../../assets/flat-icons/business-card-logo-iweb-solution-creare-magazin-online-creare-site-web-prezentare.svg',
     },
     {
       title: 'CONFORMITATE GDPR',
       description: 'Pagini cu politici de confidentialitate a cookie-urilor.',
-      imagePath: '../../../assets/flat-icons/gdpr.svg',
+      imagePath: '../../../assets/flat-icons/gdpr-logo-iweb-solution-creare-magazin-online-creare-site-web-prezentare.svg',
     },
     {
       title: 'MULTILANGUAGE',
       description:
         'Extensie pentru ca site-ului tau de prezentare sa fie translatat in mai multe limbi.',
-      imagePath: '../../../assets/flat-icons/translate.svg',
+      imagePath: '../../../assets/flat-icons/translate-logo-iweb-solution-creare-magazin-online-creare-site-web-prezentare.svg',
     },
     {
       title: 'SISTEM DE REZERVARE',
       description: 'Rezerva de la camere de hotel pana la planificare agenda.',
-      imagePath: '../../../assets/flat-icons/reserved.svg',
+      imagePath: '../../../assets/flat-icons/reserved-logo-iweb-solution-creare-magazin-online-creare-site-web-prezentare.svg',
     },
     {
       title: 'PORTOFOLIU',
       description: 'Sectiune cu proiecte realizate, slidere foto sau video.',
-      imagePath: '../../../assets/flat-icons/resume.svg',
+      imagePath: '../../../assets/flat-icons/resume-logo-iweb-solution-creare-magazin-online-creare-site-web-prezentare.svg',
     },
     {
       title: 'DIVERSE',
       description:
         'Alte plugin-uri care sunt necesare site-ului tau de prezentare.',
-      imagePath: '../../../assets/flat-icons/miscellaneous.svg',
+      imagePath: '../../../assets/flat-icons/miscellaneous-logo-iweb-solution-creare-magazin-online-creare-site-web-prezentare.svg',
     },
     {
       title: 'GARANTIE',
       description:
         'Oferim 7 zile de garantie si remediere gratuita a erorilor.',
-      imagePath: '../../../assets/flat-icons/guarantee.svg',
+      imagePath: '../../../assets/flat-icons/guarantee-logo-iweb-solution-creare-magazin-online-creare-site-web-prezentare.svg',
     },
     {
       title: 'LOCALIZARE',
       description: 'Integrare Google Maps',
-      imagePath: '../../../assets/flat-icons/place.svg',
+      imagePath: '../../../assets/flat-icons/place-logo-iweb-solution-creare-magazin-online-creare-site-web-prezentare.svg',
     },
   ];
   constructor(
