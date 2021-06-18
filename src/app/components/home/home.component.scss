@@ -77,6 +77,13 @@
       }
     }
   }
+  .partners-section {
+    .partners {
+      img {
+        margin-bottom: 75px;
+      }
+    }
+  }
 }
 //small-content
 .small-content {
@@ -220,6 +227,20 @@
           margin-bottom: 25px;
         }
       }
+    }
+  }
+}
+//partners-section
+.partners-section {
+  .partners {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    img {
+      width: 150px;
+      height: 150px;
     }
   }
 }

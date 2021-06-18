@@ -55,6 +55,26 @@ export class HomeComponent implements OnInit {
       title: 'Finalizarea, testarea si lansarea site-ului web:',
     },
   ];
+  partners = [
+    {
+      imagePath: '../../../assets/partners/the-home-shop-creare-magazin-online-creare-site-web-prezentare-i-web-solution.png'
+    },
+    {
+      imagePath: '../../../assets/partners/amy-village-creare-magazin-online-creare-site-web-prezentare-i-web-solution.png'
+    },
+    {
+      imagePath: '../../../assets/partners/yuri-shop-creare-magazin-online-creare-site-web-prezentare-i-web-solution.png'
+    },
+    {
+      imagePath: '../../../assets/partners/onix-creare-magazin-online-creare-site-web-prezentare-i-web-solution.png'
+    },
+    {
+      imagePath: '../../../assets/partners/online-game-shop-creare-magazin-online-creare-site-web-prezentare-i-web-solution.png'
+    },
+    {
+      imagePath: '../../../assets/partners/best-moments-shop-creare-magazin-online-creare-site-web-prezentare-i-web-solution.svg'
+    }
+  ]
   projects: Project[] = [
     {
       title: 'ONIX SHOP',
