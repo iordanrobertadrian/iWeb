@@ -79,6 +79,7 @@
   }
   .partners-section {
     .partners {
+      flex-direction: column;
       img {
         margin-bottom: 75px;
       }
