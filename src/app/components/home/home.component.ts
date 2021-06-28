@@ -57,22 +57,16 @@ export class HomeComponent implements OnInit {
   ];
   partners = [
     {
-      imagePath: '../../../assets/partners/the-home-shop-creare-magazin-online-creare-site-web-prezentare-i-web-solution.png'
+      imagePath: '../../../assets/partners/the-home-shop-creare-magazin-online-creare-site-web-prezentare-i-web-solution.png',
+      link: 'https://www.home-shop.ro/'
     },
     {
-      imagePath: '../../../assets/partners/amy-village-creare-magazin-online-creare-site-web-prezentare-i-web-solution.png'
+      imagePath: '../../../assets/partners/amy-village-creare-magazin-online-creare-site-web-prezentare-i-web-solution.png',
+      link: 'https://www.amy-village.ro'
     },
     {
-      imagePath: '../../../assets/partners/yuri-shop-creare-magazin-online-creare-site-web-prezentare-i-web-solution.png'
-    },
-    {
-      imagePath: '../../../assets/partners/onix-creare-magazin-online-creare-site-web-prezentare-i-web-solution.png'
-    },
-    {
-      imagePath: '../../../assets/partners/online-game-shop-creare-magazin-online-creare-site-web-prezentare-i-web-solution.png'
-    },
-    {
-      imagePath: '../../../assets/partners/best-moments-shop-creare-magazin-online-creare-site-web-prezentare-i-web-solution.svg'
+      imagePath: '../../../assets/partners/best-moments-shop-creare-magazin-online-creare-site-web-prezentare-i-web-solution.svg',
+      link: 'https://www.bestmoments-shop.com/'
     }
   ]
   projects: Project[] = [

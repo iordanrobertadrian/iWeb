@@ -162,7 +162,9 @@
   <div class="section-title">Partenerii Nostri</div>
   <div class="partners">
     <div *ngFor="let partner of partners">
-      <img class="hvr-grow" [src]="partner.imagePath" alt="Proiecte, Creare Magazin Online, Creare Site Web Prezentare, iWeb-Solution"/>
+      <a [href]="partner.link" target="_blank">
+        <img class="hvr-grow" [src]="partner.imagePath" alt="Proiecte, Creare Magazin Online, Creare Site Web Prezentare, iWeb-Solution"/>
+      </a>
     </div>
   </div>
 </div>
