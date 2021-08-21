@@ -49,7 +49,7 @@ const routes: Routes = [
     component: NewsComponent
   },
   {
-    path:'contact',
+    path:'cere-oferta',
     component: ContactUsComponent
   }
 ];
