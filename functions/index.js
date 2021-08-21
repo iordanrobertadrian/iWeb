@@ -9,7 +9,7 @@ exports.sendMailContactForm = functions.firestore
         .firestore()
         .collection("mail")
         .add({
-            to: "support@iweb-solution.ro",
+            to: "iradev.design@gmail.com",
             message: {
             subject: "Cerere oferta noua !",
             html: `
