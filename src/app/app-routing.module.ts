@@ -9,6 +9,7 @@ import { PresentationWebsiteComponent } from './components/presentation-website/
 import { ProjectStepsComponent } from './components/project-steps/project-steps.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { NewsComponent } from './components/news/news.component';
+import { PricesComponent } from './components/prices/prices.component';
 
 const routes: Routes = [
   {
@@ -35,6 +36,10 @@ const routes: Routes = [
   {
     path:'servicii-extra',
     component: ExtraServicesComponent
+  },
+  {
+    path:'calculator-de-pret',
+    component: PricesComponent
   },
   {
     path:'etapele-unui-proiect',

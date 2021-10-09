@@ -1,0 +1,86 @@
+<!-- prices configurator section -->
+<div class="prices-configurator-section small-content" id="prices-configurator">
+   <div class="section-title">
+      Configurator de pret
+   </div>
+   <div class="prices-configurator-container">
+      <mat-form-field appearance="fill" class="full-width">
+         <mat-label>Alege un serviciu</mat-label>
+         <mat-select [(ngModel)]="serviceSelectedValue" name="serviciu">
+            <mat-option *ngFor="let service of services" [value]="service.value">
+               {{service.viewValue}}
+            </mat-option>
+         </mat-select>
+      </mat-form-field>
+      <div *ngIf="serviceSelectedValue == 1" class="site-web-prezentare-section">
+         <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Numar de pagini</mat-label>
+            <mat-select [(ngModel)]="pageNumbersSiteWebPrezentareSelectedValue" name="page-site-web-prezentare">
+               <mat-option *ngFor="let value of pageNumbersSiteWebPrezentare" [value]="value.value">
+                  {{value.viewValue}}
+               </mat-option>
+            </mat-select>
+         </mat-form-field>
+         <mat-checkbox class="example-margin" [(ngModel)]="logoSiteWebPrezentare">Logo Personalizat</mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="bannerSiteWebPrezentare">Banner Personalizat</mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="gdprSiteWebPrezentare">Conformitate GDPR</mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="responsiveDesignSiteWebPrezentare">Responsive Design
+         </mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="adminPanelSiteWebPrezentare">Panou De Administrator
+         </mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="fotoVideoSiteWebPrezentare">Galerie Foto/Video</mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="slideshowSiteWebPrezentare">Slideshow</mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="seoSiteWebPrezentare">Optimizare SEO</mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="contactFormSiteWebPrezentare">Formular De Contact
+         </mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="multilanguageSiteWebPrezentare">Multilanguage</mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="portofolioSiteWebPrezentare">Portofoliu</mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="reservationSistemSiteWebPrezentare">Sistem De Rezervare
+         </mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="localizeSiteWebPrezentare">Localizare Google Maps
+         </mat-checkbox>
+         <div class="calculated-price" *ngIf="price > 0">{{ price }} €</div>
+         <div class="calculate-button">
+            <button mat-raised-button color="primary" (click)="calculateSiteWebPrezentarePrice()">Calculeaza</button>
+         </div>
+      </div>
+      <div *ngIf="serviceSelectedValue == 2" class="magazin-online-section">
+         <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Numar de pagini</mat-label>
+            <mat-select [(ngModel)]="pageNumbersMagazinOnlineSelectedValue" name="page-site-web-prezentare">
+               <mat-option *ngFor="let value of pageNumbersMagazinOnline" [value]="value.value">
+                  {{value.viewValue}}
+               </mat-option>
+            </mat-select>
+         </mat-form-field>
+         <mat-checkbox class="example-margin" [(ngModel)]="stocksMagazinOnline">Stocuri</mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="shoppingCartMagazinOnline">Cos De Cumparaturi</mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="shippingMagazinOnline">Livrare</mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="onlinePaymentMagazinOnline">Plata Online</mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="discountMagazinOnline">Discount</mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="invoiceMagazinOnline">Facturare</mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="productsAndCategoriesMagazinOnline">Produse Si Categorii
+         </mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="productsVariables">Produse Variabile</mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="responsiveDesignMagazinOnline">Design Responsive
+         </mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="adminPanelMagazinOnline">Panou De Administrare</mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="fotoVideoMagazinOnline">Galerie Foto/Video</mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="slideshowMagazinOnline">Slideshow</mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="seoMagazinOnline">Optimizare SEO</mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="contactFormMagazinOnline">Formular De Contact</mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="gdprMagazinOnline">Conformitate GDPR</mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="multilanguageMagazinOnline">Multilanguage</mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="reservationSistemMagazinOnline">Sistem De Rezervare
+         </mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="portofolioMagazinOnline">Portofoliu</mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="localizeMagazinOnline">Localizare Google Maps</mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="logoMagazinOnline">Logo Personalizat</mat-checkbox>
+         <mat-checkbox class="example-margin" [(ngModel)]="bannerMagazinOnline">Banner Personalizat</mat-checkbox>
+         <div class="calculated-price" *ngIf="price > 0">{{ price }} €</div>
+         <div class="calculate-button">
+            <button mat-raised-button color="primary" (click)="calculateMagazinOnlinePrice()">Calculeaza</button>
+         </div>
+      </div>
+   </div>
+</div>

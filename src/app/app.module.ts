@@ -21,6 +21,10 @@ import { PresentationWebsiteComponent } from './components/presentation-website/
 import { ExtraServicesComponent } from './components/extra-services/extra-services.component';
 import { ProjectStepsComponent } from './components/project-steps/project-steps.component';
 import { NewsComponent } from './components/news/news.component';
+import { PricesComponent } from './components/prices/prices.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatSelectModule } from '@angular/material/select';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +38,8 @@ import { NewsComponent } from './components/news/news.component';
     PresentationWebsiteComponent,
     ExtraServicesComponent,
     ProjectStepsComponent,
-    NewsComponent
+    NewsComponent,
+    PricesComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +51,9 @@ import { NewsComponent } from './components/news/news.component';
     MatIconModule,
     FormsModule,
     ReactiveFormsModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatCheckboxModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
